@@ -37,7 +37,7 @@
 <div class="navbar left-bar dox-bar">
 	
 <h1 class="logo">	
-    <a href="http://decorator.codable.org/" class="brand"><img src="img/logo.png" /></a>
+    <a href="index.html" class="brand"><img src="img/logo.png" /></a>
 </h1>
 
 <h2 class="prgs">Decorator is still in progress</h2>
@@ -63,27 +63,27 @@
 	
 <ul class="filter-bottom dox-filter-bottom">
 	    		
-		<li class="first noper"><a href="http://decorator.codable.org/">Blocks</a></li>
+		<li class="first noper"><a href="index.html">Blocks</a></li>
 	
-		<li class="noper"><a href="http://decorator.codable.org/forms">Forms</a></li>
+		<li class="noper"><a href="forms.html">Forms</a></li>
 	
-		<li class="noper"><a href="http://decorator.codable.org/tables">Tables</a></li>
+		<li class="noper"><a href="tables.html">Tables</a></li>
 	
-		<li class="noper"><a href="http://decorator.codable.org/lists">Lists</a></li>
+		<li class="noper"><a href="lists.html">Lists</a></li>
 
-		<li class="noper"><a href="http://decorator.codable.org/uikits">UI Kits</a></li>
+		<li class="noper"><a href="uikits.html">UI Kits</a></li>
 	
-		<li class="noper"><a href="http://decorator.codable.org/sprites">Sprites</a></li>
+		<li class="noper"><a href="sprites.html">Sprites</a></li>
 	
-		<li class="noper"><a href="http://decorator.codable.org/iconsttf">Icons</a><span class="warning">TTF</span></li>
+		<li class="noper"><a href="iconsttf.html">Icons</a><span class="warning">TTF</span></li>
 
-		<li class="noper"><a href="http://decorator.codable.org/javascript">Javascript</a></li>
+		<li class="noper"><a href="javascript.html">Javascript</a></li>
 
-		<li class="noper"><a href="http://decorator.codable.org/layouts">Layouts</a></li>
+		<li class="noper"><a href="layouts.html">Layouts</a></li>
 
-		<li class="noper"><a href="http://decorator.codable.org/gallery">Gallery</a></li>
+		<li class="noper"><a href="gallery.html">Gallery</a></li>
 
-		<li class="noper"><a href="http://decorator.codable.org/angular">Angular.js</a></li>
+		<li class="noper"><a href="angular.html">Angular.js</a></li>
 	    
 </ul>
 
