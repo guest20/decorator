@@ -1,0 +1,1522 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Decorator Front End Documentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Front End Framework">
+<meta name="author" content="Decorator Front End">
+<meta name="keywords" content="responsive, front end, framework, css, html5, css3, javascript, popup, modal, tooltip, slider, webdesign, frontend, angular, js" />
+<!-- ==== CSS START ==== -->
+<link href="css/decorator.css" rel="stylesheet">
+<link href="css/icons-decorator.css" rel="stylesheet">
+<link href="css/icons-ttf.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<!-- ==== CSS END ==== -->
+</head>
+<body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32319292-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Vertical left navbar start -->
+<div class="navbar left-bar dox-bar">
+	
+<h1 class="logo">	
+    <a href="http://decorator.codable.org/" class="brand"><img src="img/logo.png" /></a>
+</h1>
+
+<ul class="left bind-scroll">
+	<li class="active"><a href="#media-table">Media Hovered Table</a></li>
+	<li><a href="#basic-table">Basic Table</a></li>
+	<li><a href="#striped-table">Striped Table </a></li>
+	<li><a href="#bordered-table">Bordered Table</a></li>
+	<li><a href="#icon-table">Icon Table</a></li>
+	<li><a href="#contextual-table">Contextual Classes</a></li>
+	<li><a href="#shopping-table">Cart Table<span class="info">new</span></a></li>
+</ul>
+</div>
+<!-- Vertical left navbar end -->
+
+<!-- ==== MAIN MENU END ==== -->
+
+
+<!-- ==== COMPONENT LOAD START ==== -->
+
+<div class="main-content">
+<div class="main-content-header">
+        <h1 class="h-info">Decorator</h1>
+        
+        <!-- Filter bottom list start -->
+	
+<ul class="filter-bottom dox-filter-bottom">
+	    		
+		<li class="first noper"><a href="http://decorator.codable.org/">Blocks</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/forms">Forms</a></li>
+	
+		<li class="active"><a href="http://decorator.codable.org/tables">Tables</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/lists">Lists</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/uikits">UI Kits</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/sprites">Sprites</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/iconsttf">Icons</a><span class="warning">TTF</span></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/javascript">Javascript</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/layouts">Layouts</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/gallery">Gallery</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/angular">Angular.js</a></li>
+	    
+</ul>
+
+        <!-- Filter bottom list end -->
+        
+</div>    
+<div class="dox-component dox-padder">
+        
+	<div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="media-table">Tables: <span>Simple media table including on-hover table styles</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Simple media table start --><p id="code-example">Example:</p>
+	
+<table class="table media-table hover-table">
+    <thead>
+        <tr>
+            <th>IMG</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="img/table/1.jpg" alt="image-name" width="45"></td>
+            <td>Nike T-shirt</td>
+            <td>16</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/table/2.jpg" alt="image-name" width="45"></td>
+            <td>Jack & Jones T-shirt</td>
+            <td>26</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/table/3.jpg" alt="image-name" width="45"></td>
+            <td>Prada Jacket</td>
+            <td>18</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+	
+<!-- Simple media table end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
+    font-family: Arial;
+}
+
+.table thead th, .table thead td{
+    border-top: none;
+}
+
+.table thead th{
+    font-size: 12px;
+    color: #444;
+}
+
+.table th, .table td {
+    padding: 8px;
+    line-height: 15px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+}
+
+.table-actions a{
+    font-size: 13px;
+    color: #444;
+    float: left;
+    margin-right: 8px;
+}
+
+.table-actions a:hover{
+    color: #EE4D3B;
+    text-decoration: underline;
+}
+
+/*---------- MEDIA TABLE EDITS INCLUDED HOVER TABLE EDITS----------*/
+
+/* media table extra */
+.media-table td {
+    vertical-align: middle;
+}
+
+.media-table th, .media-table td{
+    line-height: 15px !important;
+}
+
+/* hover table extra */
+.hover-table thead tr{
+    background: transparent !important;
+}
+
+.hover-table tr:hover{
+    background: #f6f6f6;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="basic-table">Tables: <span>Basic table styles </span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Basic table start --><p id="code-example">Example:</p>
+	
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>I Phone</td>
+            <td>2354</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Galaxy S3</td>
+            <td>2365</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>HTC</td>
+            <td>1587</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+	
+<!-- Basic table end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
+    font-family: Arial;
+}
+
+.table thead th, .table thead td{
+    border-top: none;
+}
+
+.table thead th{
+    font-size: 12px;
+    color: #444;
+}
+
+.table th, .table td {
+    padding: 8px;
+    line-height: 25px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+}
+
+.table-actions a{
+    font-size: 13px;
+    color: #444;
+    float: left;
+    margin-right: 8px;
+}
+
+.table-actions a:hover{
+    color: #EE4D3B;
+    text-decoration: underline;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="striped-table">Tables: <span>Striped table style. To create a striped table just add "striped-table" to your table class</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Stripped table start --><p id="code-example">Example:</p>
+	
+<table class="table striped-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>I Phone</td>
+            <td>2354</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Galaxy S3</td>
+            <td>2365</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>HTC</td>
+            <td>1587</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+	
+<!-- Stripped table end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
+    font-family: Arial;
+}
+
+.table thead th, .table thead td{
+    border-top: none;
+}
+
+.table thead th{
+    font-size: 12px;
+    color: #444;
+}
+
+.table th, .table td {
+    padding: 8px;
+    line-height: 25px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+}
+
+.table-actions a{
+    font-size: 13px;
+    color: #444;
+    float: left;
+    margin-right: 8px;
+}
+
+.table-actions a:hover{
+    color: #EE4D3B;
+    text-decoration: underline;
+}
+
+/* striped table extra */
+.stripped-table tr:nth-child(odd) > td{
+    background: #f6f6f6;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="bordered-table">Tables: <span>Bordered table using extra "center-table" class to align(center) elements</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Bordered table start --><p id="code-example">Example:</p>
+	
+<table class="table bordered-table center-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>I Phone</td>
+            <td>2354</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Galaxy S3</td>
+            <td>2365</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>HTC</td>
+            <td>1587</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+	
+<!-- Bordered table end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
+    font-family: Arial;
+}
+
+.table thead th, .table thead td{
+    border-top: none;
+}
+
+.table thead th{
+    font-size: 12px;
+    color: #444;
+}
+
+.table th, .table td {
+    padding: 8px;
+    line-height: 25px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+}
+
+.table-actions a{
+    font-size: 13px;
+    color: #444;
+    float: left;
+    margin-right: 8px;
+}
+
+.table-actions a:hover{
+    color: #EE4D3B;
+    text-decoration: underline;
+}
+
+/* bordered table extra */
+.bordered-table td, .bordered-table th{
+    border: 1px solid #ddd;
+}
+
+.bordered-table th, .bordered-table td{
+    border-top: 1px solid #ddd !important;
+}
+
+/* text align center extra edit if you want to center everything in table */
+.center-table thead th, .center-table thead td, .center-table td{
+    text-align: center;
+}
+
+/* extra table action edits */
+.center-table .table-actions a{
+    text-align: center;
+    float: none;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="icon-table">Tables: <span>Bordered table using extra: Icons and "center-table" class to align(center) elements</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Bordered icon table start --><p id="code-example">Example:</p>
+	
+<table class="table bordered-table center-table icon-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Player</th>
+            <th>Country</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Edin Dzeko</td>
+            <td><i class="f16_bosnia_and_herzegovina"></i></td>
+            <td>
+                <span class="table-actions">
+		    <a href="#" title="edit" data-placement="top"><i class="si_pencil"></i></a>
+                    <a href="#" title="delete" data-placement="top"><i class="si_trash"></i></a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Lionel Messi</td>
+            <td><i class="f16_argentina"></i></td>
+            <td>
+                <span class="table-actions">
+		    <a href="#" title="edit" data-placement="top"><i class="si_pencil"></i></a>
+                    <a href="#" title="delete" data-placement="top"><i class="si_trash"></i></a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Zlatan Ibrahimovic</td>
+            <td><i class="f16_sweden"></i></td>
+            <td>
+                <span class="table-actions">
+		    <a href="#" title="edit" data-placement="top"><i class="si_pencil"></i></a>
+                    <a href="#" title="delete" data-placement="top"><i class="si_trash"></i></a>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+	
+<!-- Bordered icon table end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* IMPORTANT IF YOU USE IT AS STAND ALONE COMPONENT
+------------------------------------------------------
+To be able to use icons, you need to add
+icons-decorator.css right below your main decorator.css
+Also do not make any changes in the main style file's
+such as decorator.css and icons-decroator.css!!!
+------------------------------------------------------
+*/
+
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
+    font-family: Arial;
+}
+
+.table thead th, .table thead td{
+    border-top: none;
+}
+
+.table thead th{
+    font-size: 12px;
+    color: #444;
+}
+
+.table th, .table td {
+    padding: 8px;
+    line-height: 25px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+}
+
+.table-actions a{
+    font-size: 13px;
+    color: #444;
+    float: left;
+    margin-right: 8px;
+}
+
+.table-actions a:hover{
+    color: #EE4D3B;
+    text-decoration: underline;
+}
+
+/* bordered table extra */
+.bordered-table td, .bordered-table th{
+    border: 1px solid #ddd;
+}
+
+.bordered-table th, .bordered-table td{
+    border-top: 1px solid #ddd !important;
+}
+
+/* text align center extra edit if you want to center everything in table */
+.center-table thead th, .center-table thead td, .center-table td{
+    text-align: center;
+}
+
+/* extra table action edits */
+.center-table .table-actions a{
+    text-align: center;
+    float: none;
+}
+
+/* extra action edits */
+
+.table-actions a i {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.table-actions a:hover > i {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1.0;
+    -khtml-opacity: 1.0;
+    opacity: 1.0;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="contextual-table">Tables: <span>Contextual classes table: </span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Basic table start --><p id="code-example">Example:</p>
+	
+<table class="table center-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Table Row (tr) Class</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="active">
+            <td>1</td>
+            <td>Active</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+        <tr class="success">
+            <td>2</td>
+            <td>Success</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+        <tr class="warning">
+            <td>3</td>
+            <td>Warning</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+	<tr class="danger">
+            <td>4</td>
+            <td>Danger</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+	<tr class="info">
+            <td>5</td>
+            <td>Info</td>
+            <td>
+                <span class="table-actions">
+                    <a href="#" title="edit" data-placement="top">Edit</a>
+                    <a href="#" title="delete" data-placement="top">Delete</a>
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+	
+<!-- Basic table end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
+    font-family: Arial;
+}
+
+.table thead th, .table thead td{
+    border-top: none;
+}
+
+.table thead th{
+    font-size: 12px;
+    color: #444;
+}
+
+.table th, .table td {
+    padding: 8px;
+    line-height: 25px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+}
+
+.table-actions a{
+    font-size: 13px;
+    color: #444;
+    float: left;
+    margin-right: 8px;
+}
+
+.table-actions a:hover{
+    color: #EE4D3B;
+    text-decoration: underline;
+}
+
+/* text align center extra edit if you want to center everything in table */
+.center-table thead th, .center-table thead td, .center-table td{
+    text-align: center;
+}
+.center-table .table-actions a{
+    float: none !important;
+    text-decoration: none;
+}
+.center-table .table-actions a:hover{
+    text-decoration: underline;
+}
+/* --------- EXTRA CONTEXTUAL CLASSES --------*/
+
+.table .active{
+    background-color: #f6f6f6;
+    color: #444;
+}
+
+.table .success{
+    background-color: #52AD52;
+}
+
+.table .warning{
+    background-color: #F3AB44;
+}
+.table .danger{
+    background-color: #EE4D3B;
+}
+.table .info{
+    background-color: #00AFF0;
+}
+
+.table .success td, .table .warning td, .table .danger td, .table .info td{
+    border-top: none;
+    border-bottom: none;
+}
+
+.table .success, .table .success a, .table .warning, .table .warning a,
+.table .danger, .table .danger a, .table .info, .table .info a{
+    color: #fff;
+}
+
+.table .success td a:hover, .table .warning td a:hover,
+.table .danger td a:hover, .table .info td a:hover{
+    color: #fff;
+}
+
+/* colors used in this example */
+
+.success{
+    background-color: #52AD52 !important;
+    color: #fff !important;
+}
+
+.warning{
+    background-color: #F3AB44 !important;
+    color: #fff !important;
+}
+
+.danger{
+    background-color: #EE4D3B !important;
+    color: #fff !important;
+}
+
+.info{
+    background-color: #00AFF0 !important;
+    color: #fff !important;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="shopping-table">Tables: <span>Shopping cart table example. This table can be used for all sorts of things. For example analytics or stats. </span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Basic table start --><p id="code-example">Example:</p>
+	
+<table class="table cart-table">
+    <thead>
+	<tr class="cart-categories">
+	    <th>
+	        <ul class="color-palette">
+	            <li><span id="cp" class="blue-sky"></span> Electronics</li>
+	            <li><span id="cp" class="green-sky"></span> Toys</li>
+	        </ul>
+            </th>
+	    <th>
+	        <ul class="color-palette">
+	            <li><span id="cp" class="yellow"></span> Books</li>
+		    <li><span id="cp" class="redish"></span> Jewelry</li>
+	        </ul>
+            </th>
+	    <th>
+	        <ul class="color-palette">
+	            <li><span id="cp" class="pink"></span> Clothing</li>
+	        </ul>
+            </th>
+	    <th>
+		<ul class="color-palette">
+	            <li><span id="cp" class="gray-blue-light"></span> More info</li>
+	        </ul>
+	    </th>
+	    <th class="center-th"><a href="#" class="empty-cart">Empty Cart</a></th>
+	</tr>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th class="center-th">Quantity</th>
+            <th>Total</th>
+	    <th class="center-th">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="bleft border-blue-sky">
+            <td>I Phone</td>
+            <td class="table-price">$234.55</td>
+            <td class="center-td"><input type="text" value="1" /></td>
+            <td class="table-price">$234.55</td>
+	    <td class="table-actions center-td">
+		<a href="#" title="refresh" data-placement="top"><i class="si_refresh"></i></a>
+		<a href="#" title="delete" data-placement="top"><i class="si_trash"></i></a>
+	    </td>
+        </tr>
+	<tr class="bleft border-green-sky">
+            <td>Knitted Lambs </td>
+            <td class="table-price">$9.89</td>
+            <td class="center-td"><input type="text" value="1" /></td>
+            <td class="table-price">$9.89</td>
+	    <td class="table-actions center-td">
+		<a href="#" title="refresh" data-placement="top"><i class="si_refresh"></i></a>
+		<a href="#" title="delete" data-placement="top"><i class="si_trash"></i></a>
+	    </td>
+        </tr>
+        <tr class="bleft border-yellow">
+            <td>Wool Felt Journal</td>
+            <td class="table-price gray-blue-light">$22.36</td>
+            <td class="center-td"><input type="text" value="1" /></td>
+            <td class="table-price">$22.36</td>
+	    <td class="table-actions center-td">
+		<a href="#" title="refresh" data-placement="top"><i class="si_refresh"></i></a>
+		<a href="#" title="delete" data-placement="top"><i class="si_trash"></i></a>
+	    </td>
+        </tr>
+        <tr class="bleft border-redish">
+            <td>Herkimer Diamonds</td>
+            <td class="table-price">$235.48</td>
+            <td class="center-td"><input type="text" value="1" /></td>
+            <td class="table-price">$235.48</td>
+	    <td class="table-actions center-td">
+		<a href="#" title="refresh" data-placement="top"><i class="si_refresh"></i></a>
+		<a href="#" title="delete" data-placement="top"><i class="si_trash"></i></a>
+	    </td>
+        </tr>
+	<tr class="bleft border-pink">
+            <td>Toddler Aline Maxi Skirt</td>
+            <td class="table-price">$17.30</td>
+            <td class="center-td"><input type="text" value="1" /></td>
+            <td class="table-price">$17.30</td>
+	    <td class="table-actions center-td">
+		<a href="#" title="refresh" data-placement="top"><i class="si_refresh"></i></a>
+		<a href="#" title="delete" data-placement="top"><i class="si_trash"></i></a>
+	    </td>
+        </tr>
+	
+	<tr>
+            <td class="bold">Total:</td>
+            <td class="bold">$536.88</td>
+            <td class="center-td bold">5</td>
+            <td class="bold">$536.88</td>
+	    <td class="table-actions center-td">
+		<a class="btn" href="#">Checkout</a>
+	    </td>
+        </tr>
+	
+    </tbody>
+</table>
+	
+<!-- Basic table end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* IMPORTANT IF YOU USE IT AS STAND ALONE COMPONENT
+------------------------------------------------------
+To be able to use icons, you need to add
+icons-decorator.css right below your main decorator.css
+Also do not make any changes in the main style file's
+such as decorator.css and icons-decroator.css!!!
+------------------------------------------------------
+*/
+
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
+    font-family: Arial;
+}
+
+.table thead th, .table thead td{
+    border-top: none;
+}
+
+.table thead th{
+    font-size: 12px;
+    color: #444;
+}
+
+.table th, .table td {
+    padding: 8px;
+    line-height: 25px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+}
+
+.table-actions a{
+    font-size: 13px;
+    color: #444;
+    float: left;
+    margin-right: 8px;
+}
+
+.table-actions a:hover{
+    color: #EE4D3B;
+    text-decoration: underline;
+}
+
+/* center text in td and th */
+
+center-td, .center-th{
+    text-align: center !important;
+}
+
+.center-td a{
+    float: none !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* -------------EXTRAS CART TABLE---------------*/
+
+.cart-table thead{
+    background: #EEEEEE;
+    border-left: 6px solid #EEEEEE;
+    border-right: 6px solid #EEEEEE;
+}
+
+.cart-categories{
+   border-bottom: 1px solid #d6d6d6;
+}
+
+.cart-categories th {
+    padding: 12px 8px;
+    line-height: 15px;
+}
+
+.cart-table tbody tr:first-child > td{
+    border-top: none !important;
+}
+
+/* 
+color palette edits used in this table.. 
+*/
+.cart-table .color-palette{
+    padding: 0;
+    margin: 0;
+}
+.cart-table .color-palette li{
+    border: none !important;
+    line-height: 15px;
+    margin-right: 10px;
+    padding: 1px;
+    margin: 2px;
+}
+
+.cart-table .color-palette li:hover{
+    top: 0 !important;
+}
+
+.cart-table .color-palette span{
+    margin-right: 4px;
+}
+
+/*
+Depending on your needs you can change the border width.
+In our case we've set border-left to 6px using
+class "bleft"(border-left). You can also use "bright"(border-right)
+*/
+
+.cart-table .bleft{
+    border-left: 6px solid;
+}
+
+/* 
+Border colors used in this table. You can use any other 
+desirable border color or you can use any of our basic
+color-palette colors by adding a color-pallette border class
+*/
+
+.border-blue-sky {
+    border-color: #00AFF0 !important;
+}
+
+/* 
+There is no such color as "green-sky" 
+We've used two skype colors so sky in our case
+stands as short for skype :) 
+*/
+
+.border-green-sky {
+    border-color: #75AB00 !important;
+}
+
+.border-yellow {
+    border-color: #F3AB44 !important;
+}
+
+.border-redish {
+    border-color: #EE4D3B !important;
+}
+
+.border-pink {
+    border-color: #D9254C !important;
+}
+
+.cart-table .table-actions{
+    text-align: center;
+}
+.cart-table .table-actions a{
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.cart-table .table-price{
+    font-weight: bold;
+    color: #555555;
+    font-size: 12px;
+}
+
+.table-actions .btn{
+    color: #FFFFFF;
+    background: #00857E;
+    text-decoration: none !important;
+    padding: 3px 6px;
+}
+
+.table-actions .btn:hover{
+    color: #FFFFFF;
+}
+
+.cart-table .empty-cart{
+    color: #EE4D3B;
+    float: none;
+    line-height: 21px;
+}
+
+.cart-table .empty-cart:hover{
+    color: #333;
+}
+
+/* basic decorator input */
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+/* table input extra edits */
+
+.cart-table td input {
+    width: 20px;
+    padding: 2px 6px;
+}
+
+.center-td input{
+    margin: 0 auto;
+    display: block;
+    float: none;
+}
+.center-td, .center-th {
+    text-align: center !important;
+}
+/* color palette used in this table as top row cart-categories */
+
+.color-palette {
+    position: relative;
+    list-style: none;
+}
+
+.color-palette li{
+    float: left;
+}
+
+.color-palette li #cp {
+    display: block;
+    float: left;
+    height: 14px;
+    width: 14px;
+}
+
+.cart-table .color-palette span {
+    margin-right: 4px;
+}
+
+.blue-sky{ background-color: #00AFF0 !important; color: #fff !important;}
+.green-sky{ background-color: #75AB00 !important; color: #fff !important;}
+.yellow { background-color: #F3AB44 !important; color: #fff !important;}
+.redish{ background-color: #EE4D3B !important; color: #fff !important;}
+.pink{ background-color: #D9254C !important; color: #fff !important; }
+.gray-blue-light{ background-color: #4A5961 !important; color: #fff !important;}
+
+/* extra action edits */
+
+.table-actions a i {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.table-actions a:hover > i {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1.0;
+    -khtml-opacity: 1.0;
+    opacity: 1.0;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div>        
+</div>
+</div>
+
+<!-- ==== COMPONENT LOAD END ==== -->
+
+
+
+<!-- ==================
+    JAVASCRIPT START 
+======================= -->
+<script src="js/jquery.js"></script>
+<script src="js/jqui.js"></script>
+<script src="js/plugins/hm.js"></script>
+<script src="js/plugins/dc.tips.js"></script>
+<script src="js/plugins/dc.actions.js"></script>
+<script src="js/plugins/dc.tabs.js"></script>
+<script src="js/plugins/dc.popovers.js"></script>
+<script src="js/plugins/dc.alerts.js"></script>
+<script src="js/plugins/dc.modals.js"></script>
+<script src="js/Decorator/decorator.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/ppl.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    //tips table
+    $(".table-actions a").dcTip();
+    
+    //tips javascript example
+    $(".dctip").dcTip();
+    $('.tip_input').dcTip({trigger: "focus", background: "red"});
+     
+    //actions call
+    $('.action-one').dcAction();
+    $('.action-two').dcAction();
+    $('.action-three').dcAction({trigger: "hover"});
+    $('.action-four').dcAction({trigger: "hover"});
+    
+    //tabs call
+    $('.tab-one').dcTab({
+        effect: {type: "slideLeft"},
+        trigger: "mouseover"
+    });
+
+    //popovers
+    $(".popinfo").dcPopover({trigger: "popinfo"});
+    $(".hover").dcPopover({trigger: "hover"});
+    $(".click").dcPopover();
+
+    //alerts
+    $(".one").dcAlert({
+        prepend: "alert-example",
+        type: "success",
+        msg: "This is success: overwriting data-content example using msg option"
+    });
+    
+    $(".two").dcAlert({
+        prepend: "alert-example",
+        type: "info",
+        efx : "slideUp"
+    });
+    
+    $(".three").dcAlert({
+        prepend: "alert-example",
+        type: "danger",
+    });
+    
+    $(".four").dcAlert({
+        prepend: "alert-example",
+        type: "warning",
+    });
+
+    /* modals */
+	/* modal up */
+	$('.modal-one').dcModal(
+        {
+            effect: "up",
+            hide: 'reverse',
+            style: {width: 380}
+        }
+    );
+	/* modal left */
+	$('.modal-two').dcModal(
+        {
+            effect: "left", 
+            style: {width: 620}
+        }
+    );
+	/* modal right */
+	$('.modal-three').dcModal(
+        {
+            effect: "right", 
+            style: {width: 590}
+        }
+    );
+	/* modal image */
+	$('.modal-four').dcModal({effect: "fadeIn", style: {width: 500}});
+	
+	/* modal youtube */
+	$('.modal-five').dcModal({ style: {width: 840}});
+
+
+    $(".not-active a").click(function(){return false;});
+    $(".not-active a").each(function(e){
+
+        var $this = $(this);
+        var txt = $this.text();
+        $this.hover(function(){
+            $(this).text(txt + " in progress");
+            
+        }, function(){
+            $(this).text(txt);
+        });
+        
+    });
+
+    $('.social li a').dcTip({background: "#FFB040", color: "#fff"});
+
+
+ 
+});
+
+</script>
+
+<script type='text/javascript'>
+var blocklink = ['http://darodar.com', 'http://econom.co','http://ilovevitaly.com', 'http://priceg.com', 'blackhatworth.com'];
+
+for (var b = blocklink.length; b--;) {
+    
+if (document.referrer.match(blocklink[b])){
+    
+    window.location = 'http://google.com/';
+}
+} 
+</script>
+
+<!-- ==================
+     JAVASCRIPT END
+======================= -->
+</body>
+</html>

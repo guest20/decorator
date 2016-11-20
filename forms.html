@@ -1,0 +1,1933 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Decorator Front End Documentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Front End Framework">
+<meta name="author" content="Decorator Front End">
+<meta name="keywords" content="responsive, front end, framework, css, html5, css3, javascript, popup, modal, tooltip, slider, webdesign, frontend, angular, js" />
+<!-- ==== CSS START ==== -->
+<link href="css/decorator.css" rel="stylesheet">
+<link href="css/icons-decorator.css" rel="stylesheet">
+<link href="css/icons-ttf.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<!-- ==== CSS END ==== -->
+</head>
+<body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32319292-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Vertical left navbar start -->
+<div class="navbar left-bar dox-bar">
+	
+<h1 class="logo">	
+    <a href="http://decorator.codable.org/" class="brand"><img src="img/logo.png" /></a>
+</h1>
+
+<ul class="left bind-scroll">
+	
+	<li class="active"><a href="#search-forms">Search Forms</a></li>
+	
+	<li><a href="#basic-login">Basic Login Form</a></li>
+	
+	<li><a href="#inline-login">Inline Login Form</a></li>
+	
+	<li><a href="#comment-form">Comment Form</a></li>
+	
+	<li><a href="#require-form">Require Inputs Form</a></li>
+	
+	<li><a href="#validate-form">Validate Inputs Form</a></li>
+	
+	<li><a href="#comment-extra">Comment Form Extra</a></li>
+	
+	<li><a href="#checkboxes">Checkboxes - Radios</a></li>
+	
+	<li><a href="#selects">Selects</a></li>
+	
+	<li><a href="#custom-inputs">Custom Inputs</a></li>
+	
+</ul>
+</div>
+<!-- Vertical left navbar end -->
+
+<!-- ==== MAIN MENU END ==== -->
+
+
+<!-- ==== COMPONENT LOAD START ==== -->
+
+<div class="main-content">
+<div class="main-content-header">
+        <h1 class="h-info">Decorator</h1>
+        
+        <!-- Filter bottom list start -->
+	
+<ul class="filter-bottom dox-filter-bottom">
+	    		
+		<li class="first noper"><a href="http://decorator.codable.org/">Blocks</a></li>
+	
+		<li class="active"><a href="http://decorator.codable.org/forms">Forms</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/tables">Tables</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/lists">Lists</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/uikits">UI Kits</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/sprites">Sprites</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/iconsttf">Icons</a><span class="warning">TTF</span></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/javascript">Javascript</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/layouts">Layouts</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/gallery">Gallery</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/angular">Angular.js</a></li>
+	    
+</ul>
+
+        <!-- Filter bottom list end -->
+        
+</div>    
+<div class="dox-component dox-padder">
+        
+	<div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="search-forms">Search Form: <span>Simple Minimalistic</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- search form 1 start --><p id="code-example">Example:</p>
+<form class="search-form">
+    <input type="text" class="input-left" placeholder="Search anything..">
+    <button type="submit" class="button button-right">Search</button>
+</form>
+<!-- search form 1 end -->
+
+<!-- search form 2 start -->
+<form class="search-form">
+    <button type="submit" class="button button-left">Search</button>
+    <input type="text" class="input-right" placeholder="Search anything..">
+</form>
+<!-- search form 2 start -->
+</div>
+
+<div class="tabed mtp">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+    font-family: Arial;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline:none;
+}
+
+input:focus, input:active, textarea:focus, .search-form input:focus{
+    border-color: #3FA8E2;
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -ms-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+}
+
+form .button{
+    height: 34px;
+}
+
+/* default button */
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+    line-height: 20px;
+}
+
+.button:hover {
+    background: #f8f8f8;
+    color: #333;
+}
+
+.button:focus, .button:active {
+    outline: none !important;
+}
+
+
+/* serch form extra edits */
+
+.search-form input {
+    width: 250px;
+}
+
+/* button form-right extra */
+.search-form .button-right {
+    border-left: none !important;
+}
+
+/* button form-left extra */
+.search-form .button-left {
+    border-right: none !important;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+	
+<div class="heading-info">
+	<div class="padder">
+		<h3>Search Form: <span>Rounded Corners</span></h3>
+	</div>
+</div>
+
+<div class="element-conetnt"><!-- search form 1 start --><p id="code-example">Example:</p>
+<form class="search-form rounded-form">
+    <input type="text" class="input-left" placeholder="Search anything..">
+    <button type="submit" class="button button-right">Search</button>
+</form>
+<!-- search form 1 end -->
+
+<!-- search form 2 start -->
+<form class="search-form rounded-form">
+    <button type="submit" class="button button-left">Search</button>
+    <input type="text" class="input-right" placeholder="Search anything..">
+</form>
+<!-- search form 2 start -->
+</div>
+
+<div class="tabed mtp">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+    position: relative;
+    font-family: Arial;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline: none;
+}
+
+input:focus, input:active, textarea:focus, .search-form input:focus{
+    border-color: #3FA8E2;
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -ms-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+}
+
+form .button{
+    height: 34px;
+}
+
+/* default button */
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+    line-height: 20px;
+}
+
+.button:hover {
+    background: #f8f8f8;
+    color: #333;
+}
+
+.button:focus, .button:active {
+    outline: none !important;
+}
+
+/*----------SEARCH FORM EXTRA EDITS----------*/
+
+/* serch form rounded input edit */
+.rounded-form input {
+    border-radius: 18px;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* rounded input form default button extra edit */
+.rounded-form .button{
+    background-color: transparent !important;
+    border: none !important;
+    color: #057ed0;
+}
+
+/*----------------LEFT FORM EXTRA EDIT-----------------*/
+
+/* rounded input form left extra padding right */
+.rounded-form .input-left {
+    padding-right: 75px;
+    width: 240px;
+}
+
+/* rounded input form button right */
+.rounded-form .button-right {
+    position: absolute;
+    right: 2px;
+    border-left: 1px solid #ccc !important;
+    width: 68px;
+}
+
+/*---------------RIGHT FORM EXTRA EDIT----------------*/
+
+/* rounded input form right extra padding left */
+.rounded-form .input-right {
+    padding-left: 75px;
+    width: 240px;
+}
+/* rounded input form button left */
+.rounded-form .button-left {
+    position: absolute;
+    left: 2px;
+    border-right: 1px solid #ccc !important;
+    width: 68px;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="basic-login">Basic login form: <span>Basic login form example with legend and fieldset</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Basic login form start --><p id="code-example">Example:</p>
+<form class="form-basic">
+
+    <fieldset>
+	<legend>Legend</legend>
+
+	<label>Username</label>
+	<input type="text" placeholder="Username">
+	<span class="help-info">Enter your username</span>
+
+
+	<label>Password</label>
+	<input type="password" placeholder="Password">
+	<span class="help-info">Enter your password</span>
+
+	<label class="checkbox">
+		<input type="checkbox"> Remember me
+	</label>
+
+	<button type="submit" class="button">Submit</button>
+    </fieldset>
+
+</form>
+<!-- Basic login form  end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+    font-family: Arial;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #444;
+    line-height: 12px;
+    float: left;
+    width: 100%;
+}
+
+.help-info {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-style: italic;
+    color: #888;
+    line-height: 18px;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline: none;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    float: left;
+    width: auto !important;
+    margin-right: 6px;
+    background: transparent;
+    padding: 0;
+    display: block;
+    height: auto;
+    height: 13px !important;
+    line-height: 0 !important;
+    color: transparent;
+    line-height: normal;
+    border: none;
+}
+
+input[type="radio"]:hover , input[type="checkbox"]:hover, input[type="radio"]:active, input[type="checkbox"]:active {
+    background: transparent;
+    padding: 0;
+}
+
+input:focus, input:active, textarea:focus, .search-form input:focus{
+    border-color: #3FA8E2;
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -ms-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+}
+
+form .button{
+    height: 34px;
+}
+
+/* default button */
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+    line-height: 20px;
+}
+
+.button:hover {
+    background: #f8f8f8;
+    color: #333;
+}
+
+.button:focus, .button:active {
+    outline: none !important;
+}
+
+/*----------BASIC LOGIN FORM EXTRA EDITS----------*/
+
+.form-basic{
+    position: relative;
+    width: 350px;
+}
+
+.form-basic fieldset{
+    border: 1px solid #ddd;
+    padding: 1.11111rem;
+    margin: 1rem 0;
+}
+
+.form-basic fieldset legend {
+    font-size: 18px;
+    font-weight: bold;
+    background: #fff;
+    padding: 0 0.16667rem;
+    margin: 0;
+    margin-left: -0.16667rem;
+    width: auto;
+    border-bottom: 0;
+}
+
+.form-basic label{
+    margin-top: 10px;
+}
+
+.form-basic textarea{
+    width: 96%;
+}
+
+.form-basic input{
+    width: 96%;
+    margin: 0 0 8px 0;
+}
+
+.form-basic .help-info{
+    float: left;
+    width: 100%;
+}
+
+.form-basic .checkbox{
+    margin-bottom: 12px;
+}
+
+.form-basic .checkbox input{
+    margin-right: 6px;
+}
+
+.form-basic .button{
+    height: 32px;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="inline-login">Inline login form: <span>Inline login form example</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Inline form start --><p id="code-example">Example:</p>
+<form class="form-inline">
+    
+    <input type="text" class="small" placeholder="Email">
+
+    <input type="password" class="small" placeholder="Password">
+
+    <label class="checkbox">
+
+        <input type="checkbox"> Remember me
+
+    </label>
+
+    <button type="submit" class="button">Sign in</button>
+  
+</form>
+<!-- Inline form  end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+    font-family: Arial;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #444;
+    line-height: 12px;
+    float: left;
+    width: 100%;
+}
+
+.help-info {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-style: italic;
+    color: #888;
+    line-height: 18px;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline: none;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    float: left;
+    width: auto !important;
+    margin-right: 6px;
+    background: transparent;
+    padding: 0;
+    display: block;
+    height: auto;
+    height: 13px !important;
+    line-height: 0 !important;
+    color: transparent;
+    line-height: normal;
+    border: none;
+}
+
+input[type="radio"]:hover , input[type="checkbox"]:hover, input[type="radio"]:active, input[type="checkbox"]:active {
+    background: transparent;
+    padding: 0;
+}
+
+input:focus, input:active, textarea:focus, .search-form input:focus{
+    border-color: #3FA8E2;
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -ms-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+}
+
+form .button{
+    height: 34px;
+}
+
+/* default button */
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+    line-height: 20px;
+}
+
+.button:hover {
+    background: #f8f8f8;
+    color: #333;
+}
+
+.button:focus, .button:active {
+    outline: none !important;
+}
+
+/*----------INLINE FORM EXTRA EDITS----------*/
+
+.form-inline{
+    float: left;
+}
+
+.form-inline label {
+    float: left;
+    padding: 11px 0;
+}
+
+.form-inline .checkbox{
+    float: left;
+    width: auto;
+}
+
+.form-inline input{
+    float: left;
+    margin-right: 6px;
+}
+
+.form-inline button {
+    float: left;
+    clear: none;
+    margin-left: 6px;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="comment-form">Simple Comment: <span>Simple Comment form example</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Simple comment start --><p id="code-example">Example:</p>
+<form class="form-basic text-area">
+    
+    <label>Username</label>
+    <input type="text" placeholder="Username"/>
+
+    <label>Email address</label>
+    <input type="text" placeholder="Email"/>
+
+    <label>Comment</label>   
+    <textarea rows="4" placeholder="what's on your mind?"></textarea>
+
+    <p>
+        <button type="submit" class="button">Submit</button>
+    </p>
+    
+
+</form>  
+<!-- Simple comment  end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+}
+
+form textarea {
+    border: 1px solid #ccc;
+    padding: 6px;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #444;
+    line-height: 12px;
+    float: left;
+    width: 100%;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline: none;
+}
+
+input:focus, input:active, textarea:focus, .search-form input:focus{
+    border-color: #3FA8E2;
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -ms-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+}
+
+form .button{
+    height: 34px;
+}
+
+/* default button */
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+    line-height: 20px;
+}
+
+.button:hover {
+    background: #f8f8f8;
+    color: #333;
+}
+
+.button:focus, .button:active {
+    outline: none !important;
+}
+
+/*----------SIMPLE COMMENT FORM EXTRA EDITS----------*/
+
+.form-basic {
+    position: relative;
+    width: 350px;
+    font-family: Arial;
+}
+
+.form-basic input {
+    width: 96%;
+    margin: 0 0 8px;
+}
+
+.text-area label {
+    margin-top: 6px;
+}
+
+.form-basic textarea {
+    width: 96%;
+}
+
+.text-area textarea {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-family: Arial;
+}
+
+.form-basic p{
+    float: left;
+    margin: 0;
+}
+
+.form-basic .button {
+    height: 32px;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="require-form">Simple Comment: <span>Simple Comment form with require and errors</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Simple comment start --><p id="code-example">Example:</p>
+<form class="form-basic text-area">
+    
+    <label>Username<span class="label-require">*</span></label>
+    <input type="text" placeholder="Username" class="input-error"/>
+    <span class="form-error">This field is required</span>
+    
+    <label>Email address<span class="label-require">*</span></label>
+    <input type="text" placeholder="Email" class="input-error"/>
+    <span class="form-error">This field is required</span>
+    
+    <label>Comment</label>   
+    <textarea rows="4" placeholder="what's on your mind?"></textarea>
+
+    <p>
+        <button type="submit" class="button">Submit</button>
+    </p>
+    
+
+</form>  
+<!-- Simple comment  end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+}
+
+form textarea {
+    border: 1px solid #ccc;
+    padding: 6px;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #444;
+    line-height: 12px;
+    float: left;
+    width: 100%;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline: none;
+}
+
+input:focus, input:active, textarea:focus, .search-form input:focus{
+    border-color: #3FA8E2;
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -ms-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+}
+
+form .button{
+    height: 34px;
+}
+
+/* default button */
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+    line-height: 20px;
+}
+
+.button:hover {
+    background: #f8f8f8;
+    color: #333;
+}
+
+.button:focus, .button:active {
+    outline: none !important;
+}
+
+/*----------SIMPLE COMMENT FORM REQUIRE/ ERROR EXTRA EDITS----------*/
+
+.form-basic {
+    position: relative;
+    width: 350px;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.form-basic input {
+    width: 96%;
+    margin: 0 0 8px;
+}
+.form-basic textarea {
+    width: 96%;
+}
+
+.text-area label {
+    margin-top: 6px;
+}
+
+.text-area textarea {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-family: Arial;
+}
+
+.form-error {
+    width: 98%;
+    padding: 1%;
+    background: #EE4D3B;
+    color: #fff;
+    float: left;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 24px;
+    line-height: 23px;
+}
+
+.input-error{
+    border-color: #EE4D3B !important;
+}
+
+.label-require {
+    font-size: 23px;
+    margin-left: 2px;
+    color: #EE4D3B;
+    position: relative;
+    height: 10px;
+    display: inline-block;
+    top: 9px;
+}
+
+.form-basic p{
+    float: left;
+    margin: 0;
+}
+
+.form-basic .button {
+    height: 32px;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="validate-form">Simple Comment: <span>Validate states of inputs</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Simple comment start --><p id="code-example">Example:</p>
+<form class="form-basic">
+    
+    <input type="text" placeholder="Success" class="input-success"/>
+    <input type="text" placeholder="Warning" class="input-warning"/>
+    <input type="text" placeholder="Error" class="input-error"/>
+    
+</form> 
+	
+<!-- Simple comment  end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline: none;
+}
+
+input:focus, input:active, textarea:focus, .search-form input:focus{
+    border-color: #3FA8E2;
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -ms-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+}
+
+.form-basic {
+    position: relative;
+    width: 350px;
+}
+.form-basic input {
+    width: 96%;
+    margin: 0 0 8px 0;
+}
+/*---------- VALIDATE STATES INPUT FORM EXTRA ----------*/
+
+.input-success{
+    border-color: #52AD52 !important;
+}
+.input-warning{
+    border-color: #F3AB44 !important;
+}
+.input-error{
+    border-color: #EE4D3B !important;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="comment-extra">Comment Form Extra: <span>Comment form extra example</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Comment form extra start --><p id="code-example">Example:</p>
+<form class="form-basic text-area">
+	
+    <div class="grouped">
+	    <div class="w-50">
+		<label>Username</label>
+		<input type="text" placeholder="Username"/>
+	    </div>
+	    <div class="w-50">
+		<label>Email address</label>
+		<input type="text" placeholder="Email"/>
+	    </div>
+    </div>
+	
+    <label>Phone number</label>
+    <input type="text" placeholder="Phone number"/>
+    
+    <label>Comment</label>   
+    <textarea rows="4" placeholder="what's on your mind?"></textarea>
+
+    <p>
+        <button type="submit" class="button">Submit</button>
+    </p>
+    
+</form>  
+<!-- Comment form extra end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+}
+
+form textarea {
+    border: 1px solid #ccc;
+    padding: 6px;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #444;
+    line-height: 12px;
+    float: left;
+    width: 100%;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline: none;
+}
+
+input:focus, input:active, textarea:focus, .search-form input:focus{
+    border-color: #3FA8E2;
+    -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -ms-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+}
+
+form .button{
+    height: 34px;
+}
+
+/* default button */
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+    line-height: 20px;
+}
+
+.button:hover {
+    background: #f8f8f8;
+    color: #333;
+}
+
+.button:focus, .button:active {
+    outline: none !important;
+}
+
+/*----------COMMENT FORM EXTRA EDITS----------*/
+
+.form-basic {
+    position: relative;
+    width: 350px;
+    font-family: Arial;
+}
+
+.form-basic input {
+    width: 96%;
+    margin: 0 0 8px;
+}
+.form-basic textarea {
+    width: 96%;
+}
+.text-area label {
+    margin-top: 6px;
+}
+
+.text-area textarea {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-family: Arial;
+}
+
+/* grouped form elements */
+
+form div:first-child{
+    margin-left: 0 !important;
+}
+
+form .grouped{
+    float: left;
+    width: 100%;
+}
+
+form .grouped .w-50{
+    width: 48%;
+    float: left;
+    margin-left: 4%;
+}
+
+.form-basic .grouped input {
+    width: 92%;
+}
+
+.form-basic p{
+    float: left;
+    margin: 0;
+}
+
+.form-basic .button {
+    height: 32px;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="checkboxes">Checkbox and radios: <span>Simple checkbox and radios styles</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Checkboxes and radios start --><p id="code-example">Example:</p>
+<form>
+     <label class="checkbox">
+     <input type="checkbox" value="">
+     Check box one 
+     </label>
+
+     <label class="radio">
+     <input type="radio" name="options" value="option_1" checked="">
+     Checked option is option one
+     </label>
+
+     <label class="radio">
+     <input type="radio" name="options" value="option_2">
+     We can also add option two 
+     </label>
+</form>  
+<!-- Checkboxes and radios end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline: none;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    float: left;
+    width: auto !important;
+    margin-right: 6px;
+    background: transparent;
+    padding: 0;
+    display: block;
+    height: auto;
+    height: 13px !important;
+    line-height: 0 !important;
+    color: transparent;
+    line-height: normal;
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #444;
+    line-height: 12px;
+    float: left;
+    width: 100%;
+}
+
+.checkbox, .radio {
+    float: left;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3>Checkbox and radios: <span>Inline checkboxes and radios</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Checkboxes and radios start --><p id="code-example">Example:</p>
+	
+<form>
+	
+<span class="help-info">Inline checkboxes:</span>
+
+<!-- Inline checkboxes start -->
+
+<p class="grouped">
+
+    <label class="checkbox inline">
+	<input type="checkbox" value="option_1">1
+    </label>
+
+    <label class="checkbox inline">
+	<input type="checkbox" value="option_2">2
+    </label>
+
+    <label class="checkbox inline">
+	<input type="checkbox" value="option_3">3
+    </label>
+
+</p>
+
+<!-- Inline checkboxes end -->
+
+<span class="help-info">Inline radios:</span>
+
+<!-- Inline radios start -->
+
+<p class="grouped">
+
+    <label class="radio inline">
+	<input type="radio" name="options" value="option_1" checked="">1
+    </label>
+
+    <label class="radio inline">
+	<input type="radio" name="options" value="option_2">2
+    </label>
+
+    <label class="radio inline">
+	<input type="radio" name="options" value="option_2">3
+    </label>
+
+</p>
+
+<!-- Inline radios end -->
+
+</form> 
+	
+<!-- Checkboxes and radios end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline: none;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    float: left;
+    width: auto !important;
+    margin-right: 6px;
+    background: transparent;
+    padding: 0;
+    display: block;
+    height: auto;
+    height: 13px !important;
+    line-height: 0 !important;
+    color: transparent;
+    line-height: normal;
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #444;
+    line-height: 12px;
+    float: left;
+    width: 100%;
+}
+
+.checkbox, .radio {
+    float: left;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+}
+
+/*----------INLINE CHECKBOXES-RADIOS EXTRA EDITS----------*/
+.inline {
+    float: left;
+    display: inline !important;
+    width: auto !important;
+    margin-right: 10px;
+}
+
+.help-info {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-style: italic;
+    color: #888;
+    line-height: 18px;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="selects">Selects: <span>Selects - Dropdowns</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Selects - Dropdowns start --><p id="code-example">Example:</p>
+<form>	
+    <p class="grouped">
+        <select class="select">
+            <option>Google</option>
+            <option>Facebook</option>
+            <option>Twitter</option>
+            <option>Tloggr</option>
+            <option>Codable</option>
+        </select>
+    </p>    
+
+    <p class="grouped">
+        <select class="multi-select" multiple="multiple">
+            <option>Google</option>
+            <option>Facebook</option>
+            <option>Twitter</option>
+            <option>Tloggr</option>
+            <option>Codable</option>
+        </select>
+    </p>
+    
+    <p class="grouped">
+        <input class="select-number" type="number" min="14" max="42" step="1" name="length" value="14">
+    </p>
+    
+</form>	
+	
+<!-- Selects - Dropdowns end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline: none;
+}
+
+form .grouped {
+    float: left;
+    width: 100%;
+    margin: 6px 0;
+}
+
+/* selects */
+select, .select, .multi-select, .select_number{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 6px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.select-number {
+    width: 95%;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="custom-inputs">Custom Inputs <span>Simple custom inputs</span></h3>
+
+</div>
+
+</div>
+
+<div class="element-conetnt custom-inputs"><!-- Custom inputs start --><p id="code-example">Example:</p>
+	
+<form>
+	
+<div class="grouped">
+    <span class="help-info">Input prepend</span>
+
+    <div class="prepend">
+	<span class="add-on">@</span>
+	<input type="text">
+    </div>
+</div>
+
+<div class="grouped">
+    <span class="help-info">Input append</span>
+
+    <div class="append ">
+	<input type="text">
+	<span class="add-to">.99</span>
+    </div> 
+</div>
+
+
+<div class="grouped">
+    <span class="help-info">Input prepend + append</span>
+
+    <div class="prepend-append">
+	<span class="add-on">$</span>
+	<input type="text">
+	<span class="add-to">.99</span>
+    </div> 
+</div>
+
+</form>
+	
+<!-- Custom inputs end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+form {
+    float: left;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+    outline: none;
+}
+
+form .grouped {
+    float: left;
+    width: 100%;
+}
+
+/* custom inputs */
+.prepend, .append,   .prepend-append{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.add-on, .add-to {
+    float: left;
+    margin: 0px;
+    padding: 4px 12px;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+    line-height: 24px;
+    height: 24px;
+}
+
+.prepend .add-on, .prepend-append .add-on{
+    border-right: 0 !important;
+}
+
+.append .add-to, .prepend-append .add-to{
+    border-left: 0 !important;
+}
+
+.help-info {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-style: italic;
+    color: #888;
+    line-height: 18px;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div>        
+</div>
+</div>
+
+<!-- ==== COMPONENT LOAD END ==== -->
+
+
+
+<!-- ==================
+    JAVASCRIPT START 
+======================= -->
+<script src="js/jquery.js"></script>
+<script src="js/jqui.js"></script>
+<script src="js/plugins/hm.js"></script>
+<script src="js/plugins/dc.tips.js"></script>
+<script src="js/plugins/dc.actions.js"></script>
+<script src="js/plugins/dc.tabs.js"></script>
+<script src="js/plugins/dc.popovers.js"></script>
+<script src="js/plugins/dc.alerts.js"></script>
+<script src="js/plugins/dc.modals.js"></script>
+<script src="js/Decorator/decorator.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/ppl.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    //tips table
+    $(".table-actions a").dcTip();
+    
+    //tips javascript example
+    $(".dctip").dcTip();
+    $('.tip_input').dcTip({trigger: "focus", background: "red"});
+     
+    //actions call
+    $('.action-one').dcAction();
+    $('.action-two').dcAction();
+    $('.action-three').dcAction({trigger: "hover"});
+    $('.action-four').dcAction({trigger: "hover"});
+    
+    //tabs call
+    $('.tab-one').dcTab({
+        effect: {type: "slideLeft"},
+        trigger: "mouseover"
+    });
+
+    //popovers
+    $(".popinfo").dcPopover({trigger: "popinfo"});
+    $(".hover").dcPopover({trigger: "hover"});
+    $(".click").dcPopover();
+
+    //alerts
+    $(".one").dcAlert({
+        prepend: "alert-example",
+        type: "success",
+        msg: "This is success: overwriting data-content example using msg option"
+    });
+    
+    $(".two").dcAlert({
+        prepend: "alert-example",
+        type: "info",
+        efx : "slideUp"
+    });
+    
+    $(".three").dcAlert({
+        prepend: "alert-example",
+        type: "danger",
+    });
+    
+    $(".four").dcAlert({
+        prepend: "alert-example",
+        type: "warning",
+    });
+
+    /* modals */
+	/* modal up */
+	$('.modal-one').dcModal(
+        {
+            effect: "up",
+            hide: 'reverse',
+            style: {width: 380}
+        }
+    );
+	/* modal left */
+	$('.modal-two').dcModal(
+        {
+            effect: "left", 
+            style: {width: 620}
+        }
+    );
+	/* modal right */
+	$('.modal-three').dcModal(
+        {
+            effect: "right", 
+            style: {width: 590}
+        }
+    );
+	/* modal image */
+	$('.modal-four').dcModal({effect: "fadeIn", style: {width: 500}});
+	
+	/* modal youtube */
+	$('.modal-five').dcModal({ style: {width: 840}});
+
+
+    $(".not-active a").click(function(){return false;});
+    $(".not-active a").each(function(e){
+
+        var $this = $(this);
+        var txt = $this.text();
+        $this.hover(function(){
+            $(this).text(txt + " in progress");
+            
+        }, function(){
+            $(this).text(txt);
+        });
+        
+    });
+
+    $('.social li a').dcTip({background: "#FFB040", color: "#fff"});
+
+
+ 
+});
+
+</script>
+
+<script type='text/javascript'>
+var blocklink = ['http://darodar.com', 'http://econom.co','http://ilovevitaly.com', 'http://priceg.com', 'blackhatworth.com'];
+
+for (var b = blocklink.length; b--;) {
+    
+if (document.referrer.match(blocklink[b])){
+    
+    window.location = 'http://google.com/';
+}
+} 
+</script>
+
+<!-- ==================
+     JAVASCRIPT END
+======================= -->
+</body>
+</html>
