@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Decorator Front End Documentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Front End Framework">
+<meta name="author" content="Decorator Front End">
+<meta name="keywords" content="responsive, front end, framework, css, html5, css3, javascript, popup, modal, tooltip, slider, webdesign, frontend, angular, js" />
+<!-- ==== CSS START ==== -->
+<link href="css/decorator.css" rel="stylesheet">
+<link href="css/icons-decorator.css" rel="stylesheet">
+<link href="css/icons-ttf.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<!-- ==== CSS END ==== -->
+</head>
+<body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32319292-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Vertical left navbar start -->
+<div class="navbar left-bar dox-bar">
+	
+<h1 class="logo">	
+    <a href="http://decorator.codable.org/" class="brand"><img src="img/logo.png" /></a>
+</h1>
+
+<ul class="left">
+	<li><a href="http://decorator.codable.org/">Blocks</a></li>
+	<li class="active"><a href="http://decorator.codable.org/getit">Getting Started</a></li>
+	<li><a href="http://decorator.codable.org/about">About </a></li>
+</ul>
+
+<ul class="list list-inline social">
+
+<li class="first"><a href="https://www.facebook.com/decoratorfw" title="Facebook" data-placement="top" target="_blank"><i class="so24_facebook"></i></a></li>
+<li><a href="https://twitter.com/decoratorfw" title="Twitter" data-placement="top" target="_blank"><i class="so24_twitter"></i></a></li>
+<li><a href="https://plus.google.com/communities/102478196368985743752" title="Google+" data-placement="top" target="_blank"><i class="so24_google_plus"></i></a></li>
+<li><a href="https://github.com/uloga/decorator" title="Github" data-placement="top" target="_blank"><i class="so24_github"></i></a></li>
+
+ </ul>
+</div>
+<!-- Vertical left navbar end -->
+
+<!-- ==== MAIN MENU END ==== -->
+
+
+<!-- ==== COMPONENT LOAD START ==== -->
+
+<div class="main-content">
+<div class="main-content-header">
+        <h1 class="h-info">Decorator</h1>
+        
+        <!-- Filter bottom list start -->
+	
+<ul class="filter-bottom dox-filter-bottom">
+	    		
+		<li class="first noper"><a href="http://decorator.codable.org/">Blocks</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/forms">Forms</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/tables">Tables</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/lists">Lists</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/uikits">UI Kits</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/sprites">Sprites</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/iconsttf">Icons</a><span class="warning">TTF</span></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/javascript">Javascript</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/layouts">Layouts</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/gallery">Gallery</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/angular">Angular.js</a></li>
+	    
+</ul>
+
+        <!-- Filter bottom list end -->
+        
+</div>    
+<div class="dox-component dox-padder">
+        
+	<div class="about-fw">
+
+	<h1>Getting Started</h1>
+	<p style="margin-bottom: 25px;">
+		<a href="http://new.codable.org/" target="_blank" style="font-weight: bold;">Click Here To Preview New Decorator HTML/CSS Components</a>
+	</p>
+	<p class="strong">
+	The framework is being rewritten from scratch. A brand new modular and lighter angular.js supported version of framework
+	and a new extensive and responsive documentation is coming soon at: <a href="http://decorator.io" target="_blank">Decorator.io</a>
+	For more info visit, star or watch at: <a href="https://github.com/uloga/decorator" target="_blank">Github Repo</a>
+	</p>
+
+
+	<p class="quote border-yellow">
+		Please note that all JavaScript plugins require jQuery to be included.
+	</p>
+	
+	<div class="sm-links">
+		<h1>How To:</h1>
+		<p>
+		Step one is to include the main decorator.css file into your projects file head section. If you want to use ttf or spire icons you need to include those
+		css files as well and those need to be included right below the main decorator.css file.
+		Next step is to create a theme.css file and include that one below all of the main decorator files, you can now make all your changes in theme.css file.
+		</p>
+
+		
+	</div>
+
+	<div class="sm-links">
+		<h1>Responsive Design:</h1>
+		<p>
+			After you've included the main decorator.css file it's easy to make your layout responsive, all you have to do is add "fluid" class to your layouts body tag.
+			Your layout is now responsive. However, if you want your navbar to act as a responsive menu; then you have to follow few more steps:
+			Step one is to include the jquery into your footer section right above where "body" tag ends. After that's done include dc.menu.js file that comes with decorator js plugins right below jquery.
+			You can now call your navbar selector and add responsive menu to it by adding few more lines of code like in example shown below:
+
+			<p>
+				<span class="pre">
+					
+    					<br>
+   					&nbsp;&nbsp;	$(document).ready(function(){<br>
+       				&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;	 $('.navbar').dcMenu();<br>
+   					&nbsp;&nbsp;	});<br>
+					
+					</span>
+			</p>
+			<p class="quote border-yellow">
+				Don't forget to wrap the code shown in example above into js script tags.
+			</p>
+		</p>
+	</div>
+
+
+	<div class="sm-links">
+		<h1>Examples:</h1>
+		
+		<p>
+			Few examples included to get you started. Click on thumbnails to view live demo.
+		</p>
+		
+		<!-- Grid list start -->
+			
+		<ul class="media-grid-wide grid3">
+			
+		<!-- List node 1 start -->
+		<li>
+		    <a class="link" href="http://codable.org/templates/one/" target="_blank"><img src="img/examples/one.jpg"></a>
+		    <div class="grid-data">
+			<p><a class="grid-title" href="http://codable.org/templates/one/" target="_blank">One Column Responsive</a></p>
+			</div>
+		</li>
+		<!-- List node 1 end -->	
+
+			
+		<!-- List node 2 start -->
+		<li>
+		    <a class="link" href="http://codable.org/templates/two/" target="_blank"><img src="img/examples/two.jpg"></a>
+		    <div class="grid-data">
+			<p><a class="grid-title" href="http://codable.org/templates/two/" target="_blank">Two Column Responsive</a></p>
+			</div>
+		</li>
+		<!-- List node 2 end -->	
+
+			
+		<!-- List node 3 start -->
+		<li>
+		    <a class="link" href="http://codable.org/templates/three/" target="_blank"><img src="img/examples/three.jpg"></a>
+		    <div class="grid-data">
+			<p><a class="grid-title" href="http://codable.org/templates/three/" target="_blank">Three Column Responsive</a></p>
+			</div>
+		</li>
+		<!-- List node 3 end -->	
+
+			
+		<!-- List node 4 start -->
+		<li>
+		    <a class="link" href="http://codable.org/templates/grids/" target="_blank"><img src="img/examples/grids.jpg"></a>
+		    <div class="grid-data">
+			<p><a class="grid-title" href="http://codable.org/templates/grids/" target="_blank">Responsive Grids</a></p>
+			</div>
+		</li>
+		<!-- List node 4 end -->	
+
+			
+		<!-- List node 5 start -->
+		<li>
+		    <a class="link" href="http://codable.org/templates/admin/" target="_blank"><img src="img/examples/admin.jpg"></a>
+		    <div class="grid-data">
+			<p><a class="grid-title" href="http://codable.org/templates/admin/" target="_blank">Responsive Admin Layout</a></p>
+			</div>
+		</li>
+		<!-- List node 5 end -->	
+
+
+		   
+		</ul>
+			
+		<!-- Grid list end -->
+
+
+	</div>
+
+
+	<div class="sm-links">
+		<h3>Decorator on:</h3>
+		<ul class="list list-inline">
+			<li class="first"><a href="https://twitter.com/codableorg" title="decorator front-end" target="_blank">Twitter</a></li>
+			<li><a href="https://www.facebook.com/Codable" title="decorator front-end" target="_blank">Facebook</a></li>
+			<li><a href="https://google.com/+CodableOrg" title="decorator front-end" target="_blank">Google+</a></li>
+			<li><a href="https://plus.google.com/communities/102478196368985743752" title="decorator front-end" target="_blank">G+ Community</a></li>
+		</ul>
+	</div>
+	
+</div>        
+</div>
+</div>
+
+<!-- ==== COMPONENT LOAD END ==== -->
+
+
+
+<!-- ==================
+    JAVASCRIPT START 
+======================= -->
+<script src="js/jquery.js"></script>
+<script src="js/jqui.js"></script>
+<script src="js/plugins/hm.js"></script>
+<script src="js/plugins/dc.tips.js"></script>
+<script src="js/plugins/dc.actions.js"></script>
+<script src="js/plugins/dc.tabs.js"></script>
+<script src="js/plugins/dc.popovers.js"></script>
+<script src="js/plugins/dc.alerts.js"></script>
+<script src="js/plugins/dc.modals.js"></script>
+<script src="js/Decorator/decorator.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/ppl.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    //tips table
+    $(".table-actions a").dcTip();
+    
+    //tips javascript example
+    $(".dctip").dcTip();
+    $('.tip_input').dcTip({trigger: "focus", background: "red"});
+     
+    //actions call
+    $('.action-one').dcAction();
+    $('.action-two').dcAction();
+    $('.action-three').dcAction({trigger: "hover"});
+    $('.action-four').dcAction({trigger: "hover"});
+    
+    //tabs call
+    $('.tab-one').dcTab({
+        effect: {type: "slideLeft"},
+        trigger: "mouseover"
+    });
+
+    //popovers
+    $(".popinfo").dcPopover({trigger: "popinfo"});
+    $(".hover").dcPopover({trigger: "hover"});
+    $(".click").dcPopover();
+
+    //alerts
+    $(".one").dcAlert({
+        prepend: "alert-example",
+        type: "success",
+        msg: "This is success: overwriting data-content example using msg option"
+    });
+    
+    $(".two").dcAlert({
+        prepend: "alert-example",
+        type: "info",
+        efx : "slideUp"
+    });
+    
+    $(".three").dcAlert({
+        prepend: "alert-example",
+        type: "danger",
+    });
+    
+    $(".four").dcAlert({
+        prepend: "alert-example",
+        type: "warning",
+    });
+
+    /* modals */
+	/* modal up */
+	$('.modal-one').dcModal(
+        {
+            effect: "up",
+            hide: 'reverse',
+            style: {width: 380}
+        }
+    );
+	/* modal left */
+	$('.modal-two').dcModal(
+        {
+            effect: "left", 
+            style: {width: 620}
+        }
+    );
+	/* modal right */
+	$('.modal-three').dcModal(
+        {
+            effect: "right", 
+            style: {width: 590}
+        }
+    );
+	/* modal image */
+	$('.modal-four').dcModal({effect: "fadeIn", style: {width: 500}});
+	
+	/* modal youtube */
+	$('.modal-five').dcModal({ style: {width: 840}});
+
+
+    $(".not-active a").click(function(){return false;});
+    $(".not-active a").each(function(e){
+
+        var $this = $(this);
+        var txt = $this.text();
+        $this.hover(function(){
+            $(this).text(txt + " in progress");
+            
+        }, function(){
+            $(this).text(txt);
+        });
+        
+    });
+
+    $('.social li a').dcTip({background: "#FFB040", color: "#fff"});
+
+
+ 
+});
+
+</script>
+
+<script type='text/javascript'>
+var blocklink = ['http://darodar.com', 'http://econom.co','http://ilovevitaly.com', 'http://priceg.com', 'blackhatworth.com'];
+
+for (var b = blocklink.length; b--;) {
+    
+if (document.referrer.match(blocklink[b])){
+    
+    window.location = 'http://google.com/';
+}
+} 
+</script>
+
+<!-- ==================
+     JAVASCRIPT END
+======================= -->
+</body>
+</html>

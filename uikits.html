@@ -1,0 +1,2873 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Decorator Front End Documentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Front End Framework">
+<meta name="author" content="Decorator Front End">
+<meta name="keywords" content="responsive, front end, framework, css, html5, css3, javascript, popup, modal, tooltip, slider, webdesign, frontend, angular, js" />
+<!-- ==== CSS START ==== -->
+<link href="css/decorator.css" rel="stylesheet">
+<link href="css/icons-decorator.css" rel="stylesheet">
+<link href="css/icons-ttf.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<!-- ==== CSS END ==== -->
+</head>
+<body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32319292-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Vertical left navbar start -->
+<div class="navbar left-bar dox-bar">
+	
+<h1 class="logo">	
+    <a href="http://decorator.codable.org/" class="brand"><img src="img/logo.png" /></a>
+</h1>
+
+<ul class="left bind-scroll">
+	<li class="active"><a href="#btn-comp">Buttons</a></li>
+	<li><a href="#iconbtn-comp">Icon Buttons</a></li>
+	<li><a href="#label-comp">Labels</a></li>
+	<li><a href="#alert-comp">Alerts / Quotes</a></li>
+	<li><a href="#navhoriz-comp">Horizontal (top) Navbar</a></li>
+	<li><a href="#navvert-comp">Vertical (left) Navbar</a></li>
+	<li><a href="#iconhor-comp">Horizontal Icons Navbar</a></li>
+	<li><a href="#iconvert-comp">Vertical Icons Navbar</a></li>
+	<li><a href="#dropbottom-comp">Drop Down Bottom</a></li>
+	<li><a href="#droptop-comp">Drop Down Top </a></li>
+	<li><a href="#dropright-comp">Drop Down Right</a></li>
+</ul>
+</div>
+<!-- Vertical left navbar end -->
+
+<!-- ==== MAIN MENU END ==== -->
+
+
+<!-- ==== COMPONENT LOAD START ==== -->
+
+<div class="main-content">
+<div class="main-content-header">
+        <h1 class="h-info">Decorator</h1>
+        
+        <!-- Filter bottom list start -->
+	
+<ul class="filter-bottom dox-filter-bottom">
+	    		
+		<li class="first noper"><a href="http://decorator.codable.org/">Blocks</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/forms">Forms</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/tables">Tables</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/lists">Lists</a></li>
+
+		<li class="active"><a href="http://decorator.codable.org/uikits">UI Kits</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/sprites">Sprites</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/iconsttf">Icons</a><span class="warning">TTF</span></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/javascript">Javascript</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/layouts">Layouts</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/gallery">Gallery</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/angular">Angular.js</a></li>
+	    
+</ul>
+
+        <!-- Filter bottom list end -->
+        
+</div>    
+<div class="dox-component dox-padder">
+        
+	<div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="btn-comp">Buttons: <span>Basic button classes used on a href and button elements</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt button-contents"><!-- Buttons start --><div id="code-dox" class="border-yellow">
+In our examples we're using <span>"btn"</span> classes on button elements as well on href elements.
+You can apply <span>"btn"</span> related classes to almost anything.
+You can change the background of buttons by using pre-made classes included in decorator.css color palette 
+that you can find under colors section in main menu, or you can change it to any 
+color you desire. Please make all the changes in your theme.css
+<br />
+<hr />
+You can change on:hover state as well as border radius in your theme.css
+For larger or smaller buttons adjust padding and line-height if necessary, you can also increase 
+the font size of a button for larger buttons.
+</div>
+<p id="code-example">Example:</p>
+<!-- button background start -->
+
+<button class="btn blue-sky">Button Background</button>
+
+<!-- button background end -->
+
+<!-- link background start -->
+
+<a href="#" class="btn redish">Link Background</a>
+
+<!-- button background end -->
+
+<!-- button border start -->
+
+<button class="btn btn-border border-blue-sky btn-radius">Button Border</button>
+
+<!-- button border end -->
+
+<!-- link border start -->
+
+<a href="#" class="btn btn-border border-redish btn-radius">Link Border</a>
+
+<!-- link border end -->
+
+<!-- Buttons end navbar end -->
+</div>
+
+<div class="tabed pushTop">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* ----------basic buttons-------------*/
+
+.btn{
+    background: transparent;
+    padding: 4px 12px;
+    border: 1px solid #CCC;
+    color: #66757F;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 22px;
+    text-decoration: none;
+    float: left;
+    margin: 0;
+    cursor: pointer;
+}
+
+.button:focus, .button:active, .btn:focus, .btn:active {
+    outline: none !important;
+}
+
+/*
+You can edit on:hover state in your theme.css depending on your needs
+maybe add a background transition!?
+*/
+
+.btn:hover{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  /* IE 5-7 */
+  filter: alpha(opacity=9);
+
+  /* Netscape */
+  -moz-opacity: 0.9;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.9;
+
+  /* Good browsers */
+  opacity: 0.9;
+}
+
+.btn-border{
+    padding: 3px 15px;
+    border: 3px solid #ccc;
+}
+
+/*
+You can edit button radius in your theme.css depending on your needs
+*/
+
+.btn-radius{
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+}
+
+
+/* button colors used in this example */
+
+.blue-sky {
+    background-color: #00AFF0 !important;
+    color: #fff !important;
+    border-color: #00AFF0;
+}
+
+.redish {
+    background-color: #EE4D3B !important;
+    color: #fff !important;
+    border-color: #EE4D3B;
+}
+
+.border-blue-sky {
+    border-color: #00AFF0 !important;
+    color: #00AFF0;
+}
+
+.border-redish {
+    border-color: #EE4D3B !important;
+    color: #EE4D3B;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="iconbtn-comp">Buttons: <span>Icon buttons used on a href elements</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt bt-c"><!-- Buttons start --><div id="code-dox" class="border-yellow">
+In our examples we're using <span>"btn-square"</span> and <span>"btn-circle"</span> on href elements.
+You can change the colors of buttons by using pre-made classes included in decorator.css color palette 
+that you can find under colors section in main menu, or you can change it to any 
+color you desire. You can also change Icons using
+icons-decorator.css and icon sprites included with decorator framework.
+Please make all the changes in your theme.css
+<br />
+<hr />
+You can change on:hover state as well as border radius in your theme.css
+For larger or smaller buttons just adjust padding and icon position.
+On some icons you'd need to adjust height and width.
+</div>
+<p id="code-example">Example:</p>
+<a href="#" class="btn-square gray-blue-lighter"><i class="bi_heart"></i></a>
+
+<a href="#" class="btn-square btn-border border-blue"><i class="bi_qrcode"></i></a>
+
+<a href="#" class="btn-circle green"><i class="bi_shopping_cart"></i></a>
+
+<a href="#" class="btn-circle btn-border border-yellow "><i class="bi_bell"></i></a>
+
+<a href="#" class="btn-icon redish"><i class="bi_show_big_thumbnails"></i>Thumbnails</a>
+
+<a href="#" class="btn-icon btn-border border-pink btn-radius"><i class="bi_bell"></i>Notifications</a>
+
+<!-- Buttons end navbar end -->
+</div>
+
+<div class="tabed pushTop">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+
+/* simple href reset if used as standalone */
+
+a{
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.btn-square{
+    display: block;
+    padding: 8px;
+    border: 3px solid;
+    float: left;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.btn-circle {
+    display: block;
+    padding: 10px;
+    border-radius: 122px;
+    border: 3px solid;
+    float: left;
+}
+
+.btn-square i, .btn-circle i {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.btn-icon{
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    border: 1px solid #CCC;
+    color: #66757F;
+    line-height: 28px;
+    background: transparent;
+}
+
+.btn-border{
+    border: 3px solid #ccc;
+}
+
+.btn-radius{
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+}
+
+.btn-icon i {
+   height: 26px;
+   margin-top: -1px;
+}
+
+/* 
+Icon buttons edits.
+Don't forget to include icons-decorator.css and download necessary icon
+sprites. You can find them on: https://github.com/uloga/decorator-icons
+*/
+
+.btn-circle [class^="bi_"], [class*=" bi_"] {
+   background-image: url("../img/big/glyph-big-white.png");
+}
+
+.btn-square [class^="bi_"], [class*=" bi_"] {
+   background-image: url("../img/big/glyph-big-white.png");
+}
+
+.border-blue [class^="bi_"], [class*=" bi_"] {
+   background-image: url("../img/big/glyph-big-blue.png");
+}
+
+.border-yellow [class^="bi_"], [class*=" bi_"] {
+   background-image: url("../img/big/glyph-big-yellow.png");
+}
+
+.redish [class^="bi_"], [class*=" bi_"] {
+   background-image: url("../img/big/glyph-big-white.png");
+}
+
+.border-pink [class^="bi_"], [class*=" bi_"] {
+   background-image: url("../img/big/glyph-big-pink.png");
+}
+
+/* 
+on some icons you'd need to change hight or width as
+we've done in our example: we've changed height to 25px;
+*/
+.border-blue .bi_qrcode{
+    height: 25px;
+}
+
+/* colors used in this example */
+
+.gray-blue-lighter {
+    background-color: #566D79!important;
+    color: #fff!important;
+    border-color: #566D79;
+}
+
+.border-blue {
+    border-color: #3B8CD3!important;
+    color: #3B8CD3;
+}
+
+.green {
+    background-color: #52AD52!important;
+    color: #fff!important;
+    border-color: #52AD52;
+}
+
+.border-yellow {
+    border-color: #F3AB44!important;
+    color: #F3AB44;
+}
+
+.redish {
+    background-color: #EE4D3B!important;
+    color: #fff!important;
+    border-color: #EE4D3B;
+}
+
+.border-pink {
+    border-color: #D9254C!important;
+    color: #D9254C;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="label-comp">Labels: <span>Basic labels and badges</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt button-contents"><!-- Lable start -->
+<p id="code-example">Example:</p>
+<span class="label success">Success</span>
+<span class="label warning">Warning</span>
+<span class="label info">Info</span>
+<span class="label danger">Danger</span>
+<span class="label border-pink">Bordered</span>
+<span class="label border-lilac">Bordered</span>
+
+<!-- Labels end -->
+
+<!-- Badge label link examples start -->
+
+<a href="#">Photos<span class="label badge info">6</span></a>
+<a href="#">Videos<span class="label danger">8</span></a>
+<a href="#">Events<span class="label badge border-lilac">3</span></a>
+
+<!-- Badge label link end -->
+
+
+</div>
+
+<div class="tabed pushTop">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/* ----------LABELS-------------*/
+
+/* simple reset if used as standalone */
+
+a, .label, .badge{
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.label{
+    display: inline;
+    padding: 1px 5px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+     border: 2px solid;
+}
+
+.badge{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+a .label{
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+/* styles used in our examples */
+
+.success {
+    background-color: #52AD52 !important;
+    color: #fff !important;
+    border-color: #52AD52;
+}
+
+.warning {
+    background-color: #F3AB44 !important;
+    color: #fff !important;
+    border-color: #F3AB44;
+}
+
+.info {
+    background-color: #00AFF0 !important;
+    color: #fff !important;
+    border-color: #00AFF0;
+}
+
+.danger {
+    background-color: #EE4D3B !important;
+    color: #fff !important;
+    border-color: #EE4D3B;
+}
+
+.border-pink {
+    border-color: #D9254C !important;
+    color: #D9254C;
+}
+
+.border-lilac {
+    border-color: #4D4385 !important;
+    color: #4D4385;
+}
+
+.border-lilac {
+    border-color: #4D4385 !important;
+    color: #4D4385;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="alert-comp">Alerts / Quotes: <span>Alerts and Quotes</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt button-contents"><!-- Alerts start -->
+<p id="code-example">Example:</p>
+<div class="alert alert-success">
+    <span>Hi there!</span> This is a success message! <a href="#">a link</a>
+    <a href="#" class="alert-close">X</a>
+</div>
+
+<div class="alert alert-info">
+    <span>Hi there!</span> This is a info message! <a href="#">a link</a>
+    <a href="#" class="alert-close">X</a>
+</div>
+
+<div class="alert alert-warning">
+    <span>Hi there!</span> This is a warning message! <a href="#">a link</a>
+    <a href="#" class="alert-close">X</a>
+</div>
+
+<div class="alert alert-danger">
+    <span>Hi there!</span> This is a danger message! <a href="#">a link</a>
+    <a href="#" class="alert-close">X</a>
+</div>
+
+<!-- Alert end -->
+
+<!-- Quotes start -->
+
+<div class="quote border-green">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+</div>
+
+<div class="quote border-blue">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+</div>
+
+<div class="quote border-yellow">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+</div>
+
+<div class="quote border-redish">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+</div>
+
+<!-- Quotes end -->
+
+
+</div>
+
+<div class="tabed pushTop">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/* ----------ALERTS AND QUOTES-------------*/
+
+/* simple reset if used as standalone */
+
+.alert, .quote, a{
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.alert, .quote{
+    padding: 15px;
+    float: left;
+    width: 96%;
+    margin-bottom: 20px;
+}
+
+.alert{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    text-shadow: 0 1px 1px #e3e3e3;
+    position: relative;
+}
+
+.alert-success {
+    background-color: rgba(173, 231, 173, 0.95) !important;
+    border-color: rgba(134, 221, 134, 0.97);
+    color: #1D911D;
+}
+.alert-info {
+    background-color: rgba(0, 175, 240, 0.38) !important;
+    border-color: rgba(0, 175, 240, 0.41);
+    color: #086588;
+}
+
+.alert-warning {
+    background-color: rgba(253, 164, 37, 0.36) !important;
+    border-color: rgba(253, 167, 43, 0.41);
+    color: #C27506;
+}
+
+.alert-danger {
+    background-color: rgba(248, 96, 79, 0.5) !important;
+    border-color: rgba(248, 97, 80, 0.32);
+    color: #CA1D09;
+}
+
+.alert span{
+    font-weight: bold;
+}
+
+.alert a{
+    text-decoration: underline;
+}
+
+.alert-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none !important;
+    opacity: 0.7;
+}
+
+.alert-close:hover{
+    text-decoration: none !important;
+    opacity: 1.0;
+}
+
+.alert-success a{
+    color: #1D911D;
+}
+
+.alert-info a{
+    color: #086588;
+}
+
+.alert-warning a{
+    color: #C27506;
+}
+
+.alert-danger a{
+    color: #CA1D09;
+}
+
+/* quotes */
+.quote{
+    background: #f6f6f6;
+    border-left: 4px solid;
+    line-height: 19px;
+    color: #555 !important;
+}
+
+/* 
+Color styles used in our quote examples
+you can add any color styles or pre-made colors included with
+decorator.css, please make changes only in your theme.css file
+*/
+.border-green {
+    border-color: #4D4385 !important;
+    color: #4D4385;
+}
+
+.border-blue {
+    border-color: #3B8CD3 !important;
+    color: #3B8CD3;
+}
+
+.border-yellow {
+    border-color: #F3AB44 !important;
+    color: #F3AB44;
+}
+
+.border-redish {
+    border-color: #EE4D3B !important;
+    color: #EE4D3B;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="navhoriz-comp">Navbar: <span>Top horizontal navbar with a search form included</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Top horizontal navbar start --><div id="code-dox" class="border-yellow">
+In our example horizontal navbar is using <span>"gray-blue-light"</span> class from standard color palette provided in decorator.css.
+
+In your theme.css you can change this to any desirable color, or you can use any of our 
+pre-made colors from color palette that is provided in decorator.css 
+If you want to use pre-made colors, all you have to do is add extra color related
+eg:<span>"blue-sky"</span> class to your main navbar (wrapper) element.
+</div>
+<p id="code-example">Example:</p>
+<div class="navbar top-bar gray-blue-light">
+	
+<a href="#" class="brand">Brand</a>
+
+<ul class="left">
+    <li class="divider"></li>
+    <li><a href="#">Left 1</a></li>
+    <li class="divider"></li>
+    <li><a class="active" href="#">Left 2</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Left 3</a></li>
+    <li class="divider"></li>
+</ul>
+
+<!-- search form 1 start -->
+<form class="search-form">
+    <input type="text" class="input-left" placeholder="Search anything..">
+    <button type="submit" class="button button-right">Search</button>
+</form>
+<!-- search form 1 end -->
+
+<ul class="right">
+    <li class="divider"></li>
+    <li><a href="#">Right 1</a></li>
+</ul>
+
+</div>
+	
+<!-- Top horizontal navbar end -->
+</div>
+
+<div class="tabed pushTop">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* simple reset if used as standalone */
+
+a{
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.navbar {
+    float: left;
+    width: 100%;
+    min-height: 10px;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar .brand {
+    float: left;
+    margin: 10px 15px;
+    font-size: 19px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.navbar ul li a{
+    color: #fff;
+    line-height: 16px;
+}
+
+.navbar .search-form{
+    width: auto;
+    position: relative;
+    top: 8px;
+    margin: 0 8px;
+    float: left;
+}
+
+.navbar .search-form input {
+    width: 180px;
+    padding: 4px 8px;
+    border: none;
+}
+
+.navbar .search-form .button{
+    padding: 4px 8px;
+    border: none;
+    height: 28px;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.navbar .search-form .button-right{
+    border-left: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar .search-form .button-left{
+    border-right: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar ul li a:hover{
+    transition: background-color 0.5s ease;
+}
+
+/* --------NAVBAR TOP-BAR EXTRA EDITS---------*/
+
+.top-bar ul{
+    height: 44px;
+}
+
+.top-bar  ul li, .top-bar  ul li a{
+    float: left;
+}
+
+.top-bar  ul li{
+    position: relative;
+    display: inline;
+}
+.top-bar  ul li a{
+    float: left;
+    padding: 14px 24px;
+}
+
+/* 
+Depending on your needs, in your theme.css 
+you can change on hover and active background and text color
+*/
+
+.top-bar li a:hover, .top-bar li .active {
+	color: #4A5961 !important;
+        background-color: #eee !important;
+}
+
+.top-bar .divider {
+    border-right: 1px solid rgba(0, 0, 0, 0.17);
+    height: 100%;
+}
+
+/* colors used in this example */
+.gray-blue-light {
+    background-color: #4A5961!important;
+    color: #fff!important;
+    border-color: #4A5961;
+}
+
+/* basic form elements */
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="navvert-comp">Navbar: <span>Vertical left navbar including search form</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Vertical left navbar start --><div id="code-dox" class="border-yellow">
+	If you want to make your navbar a fixed navbar, all you
+	have to do is add "fixed" class to it, or add extra code to your </br> "left-navbar" class 
+	eg: <span>.left-navbar{ position: fixed; top:0; bottom:0; left:0; }</span> in your theme.css
+	</br>
+	Or let's say you want your navbar to appear right in stead of left, than you
+	have to add right: 0; instead of left:0; </br>
+	eg: <span>.left-navbar{ position: fixed; top:0; right:0; bottom:0; }</span>
+	</br> <hr />
+	In our example "left-navbar" width is set to 220px; You can change this based on your needs.
+	Please make all the changes in your theme.css do not change the main decorator.css
+</div>
+<p id="code-example">Example:</p>
+<div class="navbar left-bar gray-blue-light">
+	
+<h1 class="logo">	
+    <a href="#" class="brand">Brand</a>
+</h1>
+	
+<!-- search form 1 start -->
+<form class="search-form">
+    <input type="text" class="input-left" placeholder="Search anything..">
+    <button type="submit" class="button button-right">Search</button>
+</form>
+<!-- search form 1 end -->
+
+<ul class="left">
+    <li><a href="#">Vertical 1</a></li>
+    <li class="divider"></li>
+    <li><a class="active" href="#">Vertical 2</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Vertical 3</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Vertical 4</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Vertical 5</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Vertical 6</a></li>
+</ul>
+
+</div>
+	
+<!-- Vertical left navbar end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* simple reset if used as standalone */
+
+a{
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.navbar {
+    float: left;
+    width: 100%;
+    min-height: 10px;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar .brand {
+    float: left;
+    margin: 10px 15px;
+    font-size: 19px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.navbar ul li a{
+    color: #fff;
+    line-height: 16px;
+}
+
+.navbar .search-form{
+    width: auto;
+    position: relative;
+    top: 8px;
+    margin: 0 8px;
+    float: left;
+}
+
+.navbar .search-form input {
+    width: 180px;
+    padding: 4px 8px;
+    border: none;
+}
+
+.navbar .search-form .button{
+    padding: 4px 8px;
+    border: none;
+    height: 28px;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.navbar .search-form .button-right{
+    border-left: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar .search-form .button-left{
+    border-right: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar ul li a:hover{
+    transition: background-color 0.5s ease;
+}
+
+/* --------NAVBAR LEFT-BAR EXTRA EDITS---------*/
+
+.left-bar, .left-bar ul{
+    float: left;
+    width: 220px;
+}
+
+.left-bar .logo{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.left-bar .brand {
+    float: left;
+    padding: 14px 0;
+    margin-left: 12%;
+}
+
+.left-bar .search-form{
+    width: 90%;
+    display: block;
+    margin: 15px auto;
+    float: none;
+    top: 0;
+    overflow: hidden;
+}
+
+.left-bar .search-form input{
+    width: 100%;
+}
+
+.left-bar .button-right{
+    position: absolute;
+    right: 0;
+}
+
+.left-bar ul li{
+    float: left;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-bar ul li a {
+    float: left;
+    padding: 14px 0;
+    width: 89%;
+    padding-left: 12%;
+}
+
+.left-bar li a:hover, .left-bar li .active {
+	color: #4A5961 !important;
+        background-color: #eee !important;
+}
+
+.left-bar .divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+    width: 100%;
+}
+
+/* colors used in this example */
+.gray-blue-light {
+    background-color: #4A5961!important;
+    color: #fff!important;
+    border-color: #4A5961;
+}
+
+/* basic form elements */
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="iconhor-comp">Navbar: <span>Top horizontal icons navbar with a search form included</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Horizontal bar icon start --><div id="code-dox" class="border-yellow">
+In our example horizontal icons navbar is using <span>"gray-blue-light"</span> class from standard color palette provided in decorator.css.
+
+In your theme.css you can change this to any desirable color, or you can use any of our 
+pre-made colors from color palette that is provided in decorator.css 
+If you want to use pre-made colors, all you have to do is add extra color related
+eg:<span>"blue-sky"</span> class to your main navbar (wrapper) element.
+<br /><hr />
+Since we are using icons in this example, you'll also need to include icons that come with decorator.
+Please make all the changes in your theme.css do not change the main decorator.css
+</div>
+<p id="code-example">Example:</p>
+<div class="navbar top-bar-icon gray-blue-light">
+	
+<a href="#" class="brand">Brand</a>
+
+<ul class="left">
+    <li class="divider"></li>
+    <li><a href="#"><i class="bi_fire"></i></a></li>
+    <li class="divider"></li>
+    <li><a class="active" href="#"><i class="bi_parents"></i></a></li>
+    <li class="divider"></li>
+    <li><a href="#"><i class="bi_calendar"></i></a></li>
+    <li class="divider"></li>
+</ul>
+
+<!-- search form 1 start -->
+<form class="search-form">
+    <input type="text" class="input-left" placeholder="Search anything..">
+    <button type="submit" class="button button-right">Search</button>
+</form>
+<!-- search form 1 end -->
+
+<ul class="right">
+    <li class="divider"></li>
+    <li><a href="#">Right 1</a></li>
+</ul>
+
+</div>
+	
+<!-- Horizontal bar icon end -->
+</div>
+
+<div class="tabed pushTop">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* simple reset if used as standalone */
+
+a{
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.navbar {
+    float: left;
+    width: 100%;
+    min-height: 10px;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar .brand {
+    float: left;
+    margin: 10px 15px;
+    font-size: 19px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.navbar ul li a{
+    color: #fff;
+    line-height: 16px;
+}
+
+.navbar .search-form{
+    width: auto;
+    position: relative;
+    top: 8px;
+    margin: 0 8px;
+    float: left;
+}
+
+.navbar .search-form input {
+    width: 180px;
+    padding: 4px 8px;
+    border: none;
+}
+
+.navbar .search-form .button{
+    padding: 4px 8px;
+    border: none;
+    height: 28px;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.navbar .search-form .button-right{
+    border-left: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar .search-form .button-left{
+    border-right: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar ul li a:hover{
+    transition: background-color 0.5s ease;
+}
+
+/* --------NAVBAR TOP-BAR EXTRA EDITS---------*/
+
+.top-bar-icon ul{
+    height: 58px;
+}
+
+.top-bar-icon  ul li, .top-bar-icon  ul li a{
+    float: left;
+}
+
+.top-bar ul li{
+    position: relative;
+    display: inline;
+}
+
+.top-bar-icon  ul li a{
+    float: left;
+    padding: 14px 24px;
+    line-height: 30px;
+}
+
+.top-bar-icon li a:hover, .top-bar-icon li .active {
+    color: #4A5961 !important;
+    background-color: #eee !important;
+}
+
+/* 
+important note: you have to include the decorator-icons.css
+and icon sprite images folder in order to use icons
+*/
+
+.top-bar-icon [class^="bi_"], [class*=" bi_"] {
+   background-image: url("../img/big/glyph-big-white.png");
+   width: 30px;
+   height: 28px;
+   line-height: 28px;
+   margin-top: -1px;
+   vertical-align: middle;
+   display: inline-block;
+}
+
+.top-bar-icon li a:hover > i, .top-bar-icon li .active > i{
+    background-image: url("../img/big/glyph-big-gray-blue-light.png");
+}
+
+/* 
+The default width of icons is 30px , you can change the width of your 
+icons to adjust the alignment as shown in our example
+we've set two icons's width to 24px since those are smaller 
+in width
+*/
+
+.top-bar-icon li a .bi_fire, .top-bar-icon li .bi_calendar{
+    width: 24px;
+}
+
+/* top bar search form and brand edit*/
+
+.top-bar-icon .brand{
+    line-height: 38px;
+}
+
+.top-bar-icon .search-form {
+    top: 15px;
+}
+
+/* 
+Depending on your needs, in your theme.css 
+you can change on hover and active background and text color
+*/
+
+.top-bar-icon li a:hover, .top-bar-icon li .active {
+	color: #4A5961 !important;
+        background-color: #eee !important;
+}
+
+.top-bar-icon .divider {
+    border-right: 1px solid rgba(0, 0, 0, 0.17);
+    height: 100%;
+}
+
+/* colors used in this example */
+.gray-blue-light {
+    background-color: #4A5961!important;
+    color: #fff!important;
+    border-color: #4A5961;
+}
+
+/* basic form elements */
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="iconvert-comp">Navbar: <span>Top vertical icons navbar</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Vertical left bar icon start --><div id="code-dox" class="border-yellow">
+If you want to make your navbar a fixed navbar, all you
+have to do is add "fixed" class to it, or add extra code to your </br> "left-navbar" class 
+eg: <span>.left-navbar{ position: fixed; top:0; bottom:0; left:0; }</span> in your theme.css
+</br>
+Or let's say you want your navbar to appear right in stead of left, than you
+have to add right: 0; instead of left:0; </br>
+eg: <span>.left-navbar{ position: fixed; top:0; right:0; bottom:0; }</span>
+<br /><hr />
+In our example "left-bar-icon" width is set to 80px; You can change this based on your needs.
+Since we are using icons in this example, you'll also need to include icons that come with decorator.
+Please make all the changes in your theme.css do not change the main decorator.css
+</div>
+<p id="code-example">Example:</p>
+<div class="navbar left-bar-icon gray-blue-light">
+	
+<a href="#" class="brand">Brand</a>
+
+<ul class="left">
+    <li class="divider"></li>
+    <li><a href="#"><i class="bi_fire"></i><span>Fire</span></a></li>
+    <li class="divider"></li>
+    <li><a class="active" href="#"><i class="bi_parents"></i><span>Parents</span></a></li>
+    <li class="divider"></li>
+    <li><a href="#"><i class="bi_calendar"></i><span>Calendar</span></a></li>
+</ul>
+
+</div>
+	
+<!-- Vertical left bar icon end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* simple reset if used as standalone */
+
+a{
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.navbar {
+    float: left;
+    width: 100%;
+    min-height: 10px;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar .brand {
+    float: left;
+    margin: 10px 15px;
+    font-size: 19px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.navbar ul li a{
+    color: #fff;
+    line-height: 16px;
+}
+
+.navbar ul li a:hover{
+    transition: background-color 0.5s ease;
+}
+
+/* --------NAVBAR TOP-BAR LEFT BAR ICONS EXTRA EDITS---------*/
+
+.left-bar-icon .brand {
+    line-height: 38px;
+}
+
+.left-bar-icon, .left-bar-icon ul{
+    float: left;
+    width: 80px;
+}
+
+.left-bar-icon ul li{
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+.left-bar-icon  ul li a{
+    float: left;
+    padding: 14px 0;
+    line-height: 30px;
+    width: 100%;
+}
+
+.left-bar-icon li a span{
+    width: 100%;
+    text-align: center;
+    display: block;
+    line-height: 16px;
+    padding-top: 4px;
+}
+
+.left-bar-icon li a:hover, .left-bar-icon li .active {
+    color: #4A5961 !important;
+    background-color: #eee !important;
+}
+
+.left-bar-icon [class^="bi_"], [class*=" bi_"] {
+   background-image: url("../img/big/glyph-big-white.png");
+   width: 30px;
+   height: 28px;
+   line-height: 28px;
+   vertical-align: middle;
+   display: block;
+   margin: 0 auto;
+}
+
+.left-bar-icon li a:hover > i, .left-bar-icon li .active > i{
+    background-image: url("../img/big/glyph-big-gray-blue-light.png");
+}
+
+.left-bar-icon li a .bi_fire, .left-bar-icon li .bi_calendar{
+    width: 24px;
+}
+
+.left-bar-icon li a:hover, .left-bar-icon li .active {
+	color: #4A5961 !important;
+}
+
+.left-bar-icon .divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+    width: 99%;
+}
+
+/* colors used in this example */
+.gray-blue-light {
+    background-color: #4A5961!important;
+    color: #fff!important;
+    border-color: #4A5961;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="dropbottom-comp">Navbar: <span>Navbar with dropdown menu bottom and search form included</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Navbar with dropdown menu bottom start --><div id="code-dox" class="border-yellow">
+In our example horizontal navbar is using <span>"gray-blue-light"</span> class from standard color palette provided in decorator.css.
+
+In your theme.css you can change this to any desirable color, or you can use any of our 
+pre-made colors from color palette that is provided in decorator.css 
+If you want to use pre-made colors, all you have to do is add extra color related
+eg:<span>"blue-sky"</span> class to your main navbar (wrapper) element.
+</div>
+<p id="code-example">Example:</p>
+<div class="navbar top-bar gray-blue-light">
+	
+<a href="#" class="brand">Brand</a>
+
+<ul class="left dropdown-bottom">
+    <li class="divider"></li>
+    <li><a href="#">One</a></li>
+    <li><a href="#">Two</a></li>
+    
+    <li>
+	<a href="#">Drop 1 <span class="dart-bottom"></span></a>
+	<ul class="child gray-blue-light d-left">
+	    <li><a href="#">First</a></li>
+	    <li><a href="#">Second</a></li>
+	    <li>
+		<a href="#">Drop 2 <span class="dart-right"></span></a>
+		<ul class="second-child gray-blue-light">
+	            <li><a href="#">First</a></li>
+	            <li><a href="#">Second</a></li>
+	            <li><a href="#">Third</a></li>
+	            <li><a href="#">Fourth</a></li>
+	        </ul>
+	    </li>
+	    <li><a href="#">Fourth</a></li>
+	</ul>
+    </li>
+</ul>
+
+<!-- search form 1 start -->
+<form class="search-form">
+    <input type="text" class="input-left" placeholder="Search anything..">
+    <button type="submit" class="button button-right">Search</button>
+</form>
+<!-- search form 1 end -->
+
+<ul class="right dropdown-bottom">
+    <li>
+	    <a href="#"><span class="dart-bottom"></span> Drop 1</a>
+	    <ul class="child gray-blue-light d-right">
+	        <li><a href="#">First</a></li>
+	        <li><a href="#">Second</a></li>
+	        <li><a href="#">Third</a></li>
+	        <li><a href="#">Fourth</a></li>
+	    </ul>
+    </li>
+</ul>
+
+</div>
+	
+<!-- Navbar with dropdown menu bottom end -->
+</div>
+
+<div class="tabed pushTop">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* simple reset if used as standalone */
+
+a{
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.navbar {
+    float: left;
+    width: 100%;
+    min-height: 10px;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar .brand {
+    float: left;
+    margin: 10px 15px;
+    font-size: 19px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.navbar ul li a{
+    color: #fff;
+    line-height: 16px;
+}
+
+.navbar .search-form{
+    width: auto;
+    position: relative;
+    top: 8px;
+    margin: 0 8px;
+    float: left;
+}
+
+.navbar .search-form input {
+    width: 180px;
+    padding: 4px 8px;
+    border: none;
+}
+
+.navbar .search-form .button{
+    padding: 4px 8px;
+    border: none;
+    height: 28px;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.navbar .search-form .button-right{
+    border-left: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar .search-form .button-left{
+    border-right: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar ul li a:hover{
+    transition: background-color 0.5s ease;
+}
+
+/* --------NAVBAR TOP-BAR EXTRA EDITS---------*/
+
+.top-bar ul{
+    height: 44px;
+}
+
+.top-bar  ul li, .top-bar  ul li a{
+    float: left;
+}
+
+.top-bar  ul li{
+    position: relative;
+    display: inline;
+}
+.top-bar  ul li a{
+    float: left;
+    padding: 14px 24px;
+}
+
+.top-bar  ul > li:first-child a, .top-bar  ul li ul li:first-child{
+    border-left: 0;
+    border-top: 0;
+}
+
+.top-bar  ul > li:last-child a, .top-bar  ul li ul li:last-child{
+    border-right: 0;
+    border-bottom: 0;
+}
+
+/* 
+Depending on your needs, in your theme.css 
+you can change on hover and active background and text color
+*/
+
+.top-bar li a:hover, .top-bar li .active {
+	color: #4A5961 !important;
+        background-color: #eee !important;
+}
+
+.top-bar .divider {
+    border-right: 1px solid rgba(0, 0, 0, 0.17);
+    height: 100%;
+}
+
+
+/* -----------DROPDOWN MENUS----------- */
+
+.dropdown-bottom li, .dropdown-bottom li, .dropdown-left li, .dropdown-right li{
+    position: relative;
+}
+
+.dropdown-bottom li > ul, .dropdown-bottom li > ul, 
+.dropdown-left li > ul, .dropdown-right li > ul{
+    position: absolute;
+    height: auto;
+    display: none;
+}
+
+.dropdown-bottom li > ul li, .dropdown-bottom li > ul li, 
+.dropdown-left li > ul li, .dropdown-right li > ul li{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+/* 
+You can change on hover active state background and font color 
+depending on your needs in theme.css
+*/
+
+.dropdown-bottom li:hover > a, .dropdown-top li:hover > a, 
+.dropdown-left li:hover > a, .dropdown-right li:hover > a{
+    background-color: #eee;
+    color: #4A5961 !important;
+}
+
+/* dropdown child left positioning */
+
+.d-left{
+    left: 0;
+}
+
+/* dropdown child right positioning */
+
+.d-right{
+    right: 0;
+}
+
+.dart-bottom{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-top: 7px solid #999;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: "";
+}
+.dart-right{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-left: 7px solid #999;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    content: "";
+}
+
+
+/* dart edits */
+
+.d-left .dart-right, .d-right .dart-right{
+    position: absolute;
+}
+
+.d-left .dart-right{
+    right: 15px;
+    top: 18px;
+}
+
+.d-right .dart-right{
+    left: 15px;
+    top: 18px;
+}
+
+/* dropdown bottom edits */
+
+/*
+In our example we've set child's width to 150px; and top position to 44px;
+You can change this in your theme.css depending on your needs.
+*/
+.dropdown-bottom li > ul.child{
+    width: 150px;
+    top: 44px;
+}
+
+.dropdown-bottom li > ul li a{
+    width: 102px;
+}
+
+/*
+In our example we've set second child to left 150px; because
+first child's width is set to 150px; this will place second-child
+to show on the right side of the first child. if you want to move it 
+so that it appears on the left side, you could change left to -150px;
+*/
+.dropdown-bottom .second-child{
+    width: 150px;
+    top: 0;
+    left: 150px;
+}
+
+.dropdown-bottom li:hover ul.child, 
+.dropdown-bottom li:hover ul.child li:hover ul.second-child{
+    display: block;
+}
+
+/* colors used in this example */
+.gray-blue-light {
+    background-color: #4A5961!important;
+    color: #fff!important;
+    border-color: #4A5961;
+}
+
+/* basic form elements */
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+}
+</pre>
+		</div>
+	</div>
+	
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="droptop-comp">Navbar: <span>Navbar with dropdown top menu bottom and search form included</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Navbar with dropdown menu bottom start --><div id="code-dox" class="border-yellow">
+In our example horizontal navbar is using <span>"gray-blue-light"</span> class from standard color palette provided in decorator.css.
+
+In your theme.css you can change this to any desirable color, or you can use any of our 
+pre-made colors from color palette that is provided in decorator.css 
+If you want to use pre-made colors, all you have to do is add extra color related
+eg:<span>"blue-sky"</span> class to your main navbar (wrapper) element.
+</div>
+<p id="code-example">Example:</p>
+<div class="navbar top-bar gray-blue-light">
+	
+<a href="#" class="brand">Brand</a>
+
+<ul class="left dropdown dropdown-top">
+    <li class="divider"></li>
+    <li><a href="#">One</a></li>
+    <li><a href="#">Two</a></li>
+    
+    <li>
+	<a href="#">Drop 1 <span class="dart-top"></span></a>
+	<ul class="child gray-blue-light d-left">
+	    <li><a href="#">First</a></li>
+	    <li><a href="#">Second</a></li>
+	    <li>
+		<a href="#">Drop 2 <span class="dart-right"></span></a>
+		<ul class="second-child gray-blue-light">
+	            <li><a href="#">First</a></li>
+	            <li><a href="#">Second</a></li>
+	            <li><a href="#">Third</a></li>
+	            <li><a href="#">Fourth</a></li>
+	        </ul>
+	    </li>
+	    <li><a href="#">Fourth</a></li>
+	</ul>
+    </li>
+</ul>
+
+<!-- search form 1 start -->
+<form class="search-form">
+    <input type="text" class="input-left" placeholder="Search anything..">
+    <button type="submit" class="button button-right">Search</button>
+</form>
+<!-- search form 1 end -->
+
+<ul class="right dropdown-top">
+    <li>
+	    <a href="#"><span class="dart-top"></span> Drop 1</a>
+	    <ul class="child gray-blue-light d-right">
+	        <li><a href="#">First</a></li>
+	        <li><a href="#">Second</a></li>
+	        <li><a href="#">Third</a></li>
+	        <li><a href="#">Fourth</a></li>
+	    </ul>
+    </li>
+</ul>
+
+</div>
+	
+<!-- Navbar with dropdown menu bottom end -->
+</div>
+
+<div class="tabed pushTop">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+
+/* simple reset if used as standalone */
+
+a{
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.navbar {
+    float: left;
+    width: 100%;
+    min-height: 10px;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar .brand {
+    float: left;
+    margin: 10px 15px;
+    font-size: 19px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.navbar ul li a{
+    color: #fff;
+    line-height: 16px;
+}
+
+.navbar .search-form{
+    width: auto;
+    position: relative;
+    top: 8px;
+    margin: 0 8px;
+    float: left;
+}
+
+.navbar .search-form input {
+    width: 180px;
+    padding: 4px 8px;
+    border: none;
+}
+
+.navbar .search-form .button{
+    padding: 4px 8px;
+    border: none;
+    height: 28px;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.navbar .search-form .button-right{
+    border-left: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar .search-form .button-left{
+    border-right: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar ul li a:hover{
+    transition: background-color 0.5s ease;
+}
+
+/* --------NAVBAR TOP-BAR EXTRA EDITS---------*/
+
+.top-bar ul{
+    height: 44px;
+}
+
+.top-bar  ul li, .top-bar  ul li a{
+    float: left;
+}
+
+.top-bar  ul li{
+    position: relative;
+    display: inline;
+}
+.top-bar  ul li a{
+    float: left;
+    padding: 14px 24px;
+}
+
+.top-bar  ul > li:first-child a, .top-bar  ul li ul li:first-child{
+    border-left: 0;
+    border-top: 0;
+}
+
+.top-bar  ul > li:last-child a, .top-bar  ul li ul li:last-child{
+    border-right: 0;
+    border-bottom: 0;
+}
+
+/* 
+Depending on your needs, in your theme.css 
+you can change on hover and active background and text color
+*/
+
+.top-bar li a:hover, .top-bar li .active {
+	color: #4A5961 !important;
+        background-color: #eee !important;
+}
+
+.top-bar .divider {
+    border-right: 1px solid rgba(0, 0, 0, 0.17);
+    height: 100%;
+}
+
+
+/* -----------DROPDOWN MENUS----------- */
+
+.dropdown-bottom li, .dropdown-bottom li, .dropdown-left li, .dropdown-right li{
+    position: relative;
+}
+
+.dropdown-bottom li > ul, .dropdown-top li > ul, 
+.dropdown-left li > ul, .dropdown-right li > ul{
+    position: absolute;
+    height: auto;
+    display: none;
+}
+
+.dropdown-bottom li > ul li, .dropdown-bottom li > ul li, 
+.dropdown-left li > ul li, .dropdown-right li > ul li{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+/* 
+You can change on hover active state background and font color 
+depending on your needs in theme.css
+*/
+
+.dropdown-bottom li:hover > a, .dropdown-top li:hover > a, 
+.dropdown-left li:hover > a, .dropdown-right li:hover > a{
+    background-color: #eee;
+    color: #4A5961 !important;
+}
+
+/* dropdown child left positioning */
+
+.d-left{
+    left: 0;
+}
+
+/* dropdown child right positioning */
+
+.d-right{
+    right: 0;
+}
+
+.dart-top{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-bottom: 7px solid #999;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: "";
+}
+
+.dart-right{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-left: 7px solid #999;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    content: "";
+}
+
+/* dart edits */
+
+.d-left .dart-right, .d-right .dart-right{
+    position: absolute;
+}
+
+.d-left .dart-right{
+    right: 15px;
+    top: 18px;
+}
+
+.d-right .dart-right{
+    left: 15px;
+    top: 18px;
+}
+
+/* dropdown top edits */
+
+/*
+In our example we've set child's width to 150px; and top position to 44px;
+You can change this in your theme.css depending on your needs.
+*/
+.dropdown-top li > ul.child{
+    width: 150px;
+    bottom: 44px;
+}
+
+.dropdown-top li > ul li a{
+    width: 102px;
+}
+
+.dropdown-top li:hover ul.child, 
+.dropdown-top li:hover ul.child li:hover ul.second-child{
+    display: block;
+}
+
+/*
+In our example we've set second child to left 150px; because
+first child's width is set to 150px; this will place second-child
+to show on the right side of the first child. if you want to move it 
+so that it appears on the left side, you could change left to -150px;
+*/
+.dropdown-top .second-child{
+    width: 150px;
+    bottom: 0;
+    left: 150px;
+}
+
+.dropdown-top li:hover ul.child, 
+.dropdown-top li:hover ul.child li:hover ul.second-child{
+    display: block;
+}
+
+/* colors used in this example */
+.gray-blue-light {
+    background-color: #4A5961!important;
+    color: #fff!important;
+    border-color: #4A5961;
+}
+
+/* basic form elements */
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="dropright-comp">Navbar: <span>Vertical left navbar with dropdown menu right including search form</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt"><!-- Vertical left navbar with dropdown menu right start --><div id="code-dox" class="border-yellow">
+	If you want to make your navbar a fixed navbar, all you
+	have to do is add "fixed" class to it, or add extra code to your </br> "left-navbar" class 
+	eg: <span>.left-navbar{ position: fixed; top:0; bottom:0; left:0; }</span> in your theme.css
+	</br>
+	Or let's say you want your navbar to appear right in stead of left, than you
+	have to add right: 0; instead of left:0; </br>
+	eg: <span>.left-navbar{ position: fixed; top:0; right:0; bottom:0; }</span>
+	</br> <hr />
+	In our example "left-navbar" width is set to 220px; You can change this based on your needs.
+	Please make all the changes in your theme.css do not change the main decorator.css
+</div>
+<p id="code-example">Example:</p>
+<div class="navbar left-bar gray-blue-light">
+	
+<h1 class="logo">	
+    <a href="#" class="brand">Brand</a>
+</h1>
+	
+<!-- search form 1 start -->
+<form class="search-form">
+    <input type="text" class="input-left" placeholder="Search anything..">
+    <button type="submit" class="button button-right">Search</button>
+</form>
+<!-- search form 1 end -->
+
+<ul class="left dropdown-right d-left">
+	
+    <li><a href="#">Vertical 1</a></li>
+    <li class="divider"></li>
+    
+    <li>
+	<a href="#">Drop 1 <span class="dart-right"></span></a>
+	
+	<!-- First Drop Start -->
+	
+	<ul class="child gray-blue-light d-left">
+		
+	    <li><a href="#">First</a></li>
+	    <li><a href="#">Second</a></li>
+	    
+	    <li>
+		<a href="#">Drop 2 <span class="dart-right"></span></a>
+		
+		<!-- Second Drop Start -->
+		
+		<ul class="second-child gray-blue-light">
+			
+	            <li><a href="#">First</a></li>
+	            <li><a href="#">Second</a></li>
+	            <li><a href="#">Third</a></li>
+	            <li><a href="#">Fourth</a></li>
+		    
+	        </ul>
+		
+		<!-- Second Drop End -->
+		
+	    </li>
+	    
+	    <li><a href="#">Fourth</a></li>
+	    
+	</ul>
+	
+	<!-- First Drop End -->
+	
+    </li>
+    
+    <li class="divider"></li>
+    <li><a href="#">Vertical 3</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Vertical 4</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Vertical 5</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Vertical 6</a></li>
+    
+</ul>
+
+</div>
+	
+<!-- Vertical left navbar with dropdown menu right end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* simple reset if used as standalone */
+
+a{
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.navbar {
+    float: left;
+    width: 100%;
+    min-height: 10px;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar .brand {
+    float: left;
+    margin: 10px 15px;
+    font-size: 19px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.navbar ul li a{
+    color: #fff;
+    line-height: 16px;
+}
+
+.navbar .search-form{
+    width: auto;
+    position: relative;
+    top: 8px;
+    margin: 0 8px;
+    float: left;
+}
+
+.navbar .search-form input {
+    width: 180px;
+    padding: 4px 8px;
+    border: none;
+}
+
+.navbar .search-form .button{
+    padding: 4px 8px;
+    border: none;
+    height: 28px;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.navbar .search-form .button-right{
+    border-left: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar .search-form .button-left{
+    border-right: 1px solid rgba(0, 0, 0, 0.17) !important;
+}
+
+.navbar ul li a:hover{
+    transition: background-color 0.5s ease;
+}
+
+/* --------NAVBAR LEFT-BAR EXTRA EDITS---------*/
+
+.left-bar, .left-bar ul{
+    float: left;
+    width: 220px;
+}
+
+.left-bar .logo{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.left-bar .brand {
+    float: left;
+    padding: 14px 0;
+    margin-left: 12%;
+}
+
+.left-bar .search-form{
+    width: 90%;
+    display: block;
+    margin: 15px auto;
+    float: none;
+    top: 0;
+    overflow: hidden;
+}
+
+.left-bar .search-form input{
+    width: 100%;
+}
+
+.left-bar .button-right{
+    position: absolute;
+    right: 0;
+}
+
+.left-bar ul li{
+    float: left;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-bar ul li a {
+    float: left;
+    padding: 14px 0;
+    width: 89%;
+    padding-left: 12%;
+}
+
+.left-bar li a:hover, .left-bar li .active {
+	color: #4A5961 !important;
+        background-color: #eee !important;
+}
+
+.left-bar .divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+    width: 100%;
+}
+
+
+/* -----------DROPDOWN MENUS----------- */
+
+.dropdown-bottom li, .dropdown-bottom li, .dropdown-left li, .dropdown-right li{
+    position: relative;
+}
+
+.dropdown-bottom li > ul, .dropdown-bottom li > ul, 
+.dropdown-left li > ul, .dropdown-right li > ul{
+    position: absolute;
+    height: auto;
+    display: none;
+}
+
+.dropdown-bottom li > ul li, .dropdown-bottom li > ul li, 
+.dropdown-left li > ul li, .dropdown-right li > ul li{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+/* 
+You can change on hover active state background and font color 
+depending on your needs in theme.css
+*/
+
+.dropdown-bottom li:hover > a, .dropdown-top li:hover > a, 
+.dropdown-left li:hover > a, .dropdown-right li:hover > a{
+    background-color: #eee;
+    color: #4A5961 !important;
+}
+
+/* dropdown child left positioning */
+
+.d-left{
+    left: 0;
+}
+
+/* dropdown child right positioning */
+
+.d-right{
+    right: 0;
+}
+
+.dart-right{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-left: 7px solid #999;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    content: "";
+}
+
+
+/* dart edits */
+
+.d-left .dart-right, .d-right .dart-right{
+    position: absolute;
+}
+
+.d-left .dart-right{
+    right: 15px;
+    top: 18px;
+}
+
+.d-right .dart-right{
+    left: 15px;
+    top: 18px;
+}
+
+/* dropdown bottom edits */
+
+/*
+In our example we've set child's width to 220px; and left position to 220px;
+You can change this in your theme.css depending on your needs.
+*/
+.dropdown-right li > ul.child, .dropdown-right .second-child{
+    width: 220px;
+    left: 220px;
+    top: 0;
+}
+
+.dropdown-right li > ul li a{
+    width: 194px;
+}
+
+.dropdown-right li{
+    overflow: visible !important;
+}
+
+.dropdown-right li:hover ul.child, 
+.dropdown-right li:hover ul.child li:hover ul.second-child{
+    display: block;
+}
+
+/* colors used in this example */
+.gray-blue-light {
+    background-color: #4A5961!important;
+    color: #fff!important;
+    border-color: #4A5961;
+}
+
+/* basic form elements */
+
+input {
+    display: inline-block;
+    height: 20px;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.button {
+    float: left;
+    margin: 0;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #CCC;
+    color: #66757F;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div>        
+</div>
+</div>
+
+<!-- ==== COMPONENT LOAD END ==== -->
+
+
+
+<!-- ==================
+    JAVASCRIPT START 
+======================= -->
+<script src="js/jquery.js"></script>
+<script src="js/jqui.js"></script>
+<script src="js/plugins/hm.js"></script>
+<script src="js/plugins/dc.tips.js"></script>
+<script src="js/plugins/dc.actions.js"></script>
+<script src="js/plugins/dc.tabs.js"></script>
+<script src="js/plugins/dc.popovers.js"></script>
+<script src="js/plugins/dc.alerts.js"></script>
+<script src="js/plugins/dc.modals.js"></script>
+<script src="js/Decorator/decorator.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/ppl.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    //tips table
+    $(".table-actions a").dcTip();
+    
+    //tips javascript example
+    $(".dctip").dcTip();
+    $('.tip_input').dcTip({trigger: "focus", background: "red"});
+     
+    //actions call
+    $('.action-one').dcAction();
+    $('.action-two').dcAction();
+    $('.action-three').dcAction({trigger: "hover"});
+    $('.action-four').dcAction({trigger: "hover"});
+    
+    //tabs call
+    $('.tab-one').dcTab({
+        effect: {type: "slideLeft"},
+        trigger: "mouseover"
+    });
+
+    //popovers
+    $(".popinfo").dcPopover({trigger: "popinfo"});
+    $(".hover").dcPopover({trigger: "hover"});
+    $(".click").dcPopover();
+
+    //alerts
+    $(".one").dcAlert({
+        prepend: "alert-example",
+        type: "success",
+        msg: "This is success: overwriting data-content example using msg option"
+    });
+    
+    $(".two").dcAlert({
+        prepend: "alert-example",
+        type: "info",
+        efx : "slideUp"
+    });
+    
+    $(".three").dcAlert({
+        prepend: "alert-example",
+        type: "danger",
+    });
+    
+    $(".four").dcAlert({
+        prepend: "alert-example",
+        type: "warning",
+    });
+
+    /* modals */
+	/* modal up */
+	$('.modal-one').dcModal(
+        {
+            effect: "up",
+            hide: 'reverse',
+            style: {width: 380}
+        }
+    );
+	/* modal left */
+	$('.modal-two').dcModal(
+        {
+            effect: "left", 
+            style: {width: 620}
+        }
+    );
+	/* modal right */
+	$('.modal-three').dcModal(
+        {
+            effect: "right", 
+            style: {width: 590}
+        }
+    );
+	/* modal image */
+	$('.modal-four').dcModal({effect: "fadeIn", style: {width: 500}});
+	
+	/* modal youtube */
+	$('.modal-five').dcModal({ style: {width: 840}});
+
+
+    $(".not-active a").click(function(){return false;});
+    $(".not-active a").each(function(e){
+
+        var $this = $(this);
+        var txt = $this.text();
+        $this.hover(function(){
+            $(this).text(txt + " in progress");
+            
+        }, function(){
+            $(this).text(txt);
+        });
+        
+    });
+
+    $('.social li a').dcTip({background: "#FFB040", color: "#fff"});
+
+
+ 
+});
+
+</script>
+
+<script type='text/javascript'>
+var blocklink = ['http://darodar.com', 'http://econom.co','http://ilovevitaly.com', 'http://priceg.com', 'blackhatworth.com'];
+
+for (var b = blocklink.length; b--;) {
+    
+if (document.referrer.match(blocklink[b])){
+    
+    window.location = 'http://google.com/';
+}
+} 
+</script>
+
+<!-- ==================
+     JAVASCRIPT END
+======================= -->
+</body>
+</html>

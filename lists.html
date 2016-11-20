@@ -1,0 +1,1918 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Decorator Front End Documentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Front End Framework">
+<meta name="author" content="Decorator Front End">
+<meta name="keywords" content="responsive, front end, framework, css, html5, css3, javascript, popup, modal, tooltip, slider, webdesign, frontend, angular, js" />
+<!-- ==== CSS START ==== -->
+<link href="css/decorator.css" rel="stylesheet">
+<link href="css/icons-decorator.css" rel="stylesheet">
+<link href="css/icons-ttf.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<!-- ==== CSS END ==== -->
+</head>
+<body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32319292-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Vertical left navbar start -->
+<div class="navbar left-bar dox-bar">
+	
+<h1 class="logo">	
+    <a href="http://decorator.codable.org/" class="brand"><img src="img/logo.png" /></a>
+</h1>
+
+<ul class="left bind-scroll">
+	<li class="active"><a href="#unordered-list">Unordered List</a></li>
+	<li><a href="#ordered-list">Ordered List</a></li>
+	<li><a href="#inline-list">Inline List (Flags)</a></li>
+	<li><a href="#menubottom-list">Menu Filter Bottom</a></li>
+	<li><a href="#menutop-list">Menu Filter Top</a></li>
+	<li><a href="#menuleft-list">Menu Filter Left</a></li>
+	<li><a href="#menuright-list">Menu Filter Right</a></li>
+	<li><a href="#pagination-list">Pagination List</a></li>
+	<li><a href="#media-list">Media List  (Article)</a></li>
+	<li><a href="#grid-list">Media Grid Simple</a></li>
+	<li><a href="#gridwide-list">Media Grid Wide<span class="info">new</span></a></li>
+	<li><a href="#nestedcomments-list">Nested Comments<span class="info">new</span></a></li>
+</ul>
+</div>
+<!-- Vertical left navbar end -->
+
+<!-- ==== MAIN MENU END ==== -->
+
+
+<!-- ==== COMPONENT LOAD START ==== -->
+
+<div class="main-content">
+<div class="main-content-header">
+        <h1 class="h-info">Decorator</h1>
+        
+        <!-- Filter bottom list start -->
+	
+<ul class="filter-bottom dox-filter-bottom">
+	    		
+		<li class="first noper"><a href="http://decorator.codable.org/">Blocks</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/forms">Forms</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/tables">Tables</a></li>
+	
+		<li class="active"><a href="http://decorator.codable.org/lists">Lists</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/uikits">UI Kits</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/sprites">Sprites</a></li>
+	
+		<li class="noper"><a href="http://decorator.codable.org/iconsttf">Icons</a><span class="warning">TTF</span></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/javascript">Javascript</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/layouts">Layouts</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/gallery">Gallery</a></li>
+
+		<li class="noper"><a href="http://decorator.codable.org/angular">Angular.js</a></li>
+	    
+</ul>
+
+        <!-- Filter bottom list end -->
+        
+</div>    
+<div class="dox-component dox-padder">
+        
+	<div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="unordered-list">Lists: <span>Basic Unordered Nested List</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Unordered list start --><p id="code-example">Example:</p>
+	
+<ul class="list list-disc">
+    <li>Australia</li>
+    <li>Austria</li>
+    <li>The Netherlands</li>
+    <li>Germany</li>
+    <li>France</li>
+    <li class="push-left">United States Of America
+	<ul class="list-circle">
+    	<li>New York</li>
+    	<li>California</li>
+    	<li>Texas</li>
+    	<li>Florida</li>
+	</ul>
+    </li>
+    <li>India</li>
+    <li>South Africa</li>
+    <li>Nigeria</li>
+    <li>Ghana</li>
+    <li>Egypt</li>
+</ul>
+	
+<!-- Unordered list end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.list{
+    position: relative;
+    color: #444;
+    font-family: Arial;
+    font-size: 14px;
+    float: left;
+}
+
+.list li{
+    margin-bottom: 4px;
+}
+
+.push-left > ul{
+    margin: 8px 0;
+    padding-left: 17px;
+}
+
+.list-disc{
+    list-style: disc;
+}
+
+.list-circle{
+    list-style: circle;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="ordered-list">Lists: <span>Basic Ordered List</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Ordered list start --><p id="code-example">Example:</p>
+	
+<ol class="list">
+    <li>Australia</li>
+    <li>Austria</li>
+    <li>The Netherlands</li>
+    <li>United States Of America</li>
+    <li>Germany</li>
+    <li>France</li>
+    <li>Sweden</li>
+    <li>Denmark</li>
+    <li>South Africa</li>
+    <li>India</li>
+</ol>
+	
+<!-- Ordered list end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.list{
+    position: relative;
+    color: #444;
+    font-family: Arial;
+    font-size: 14px;
+    float: left;
+}
+
+.list li{
+    margin-bottom: 4px;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="inline-list">Lists: <span>Basic Inline List Using Flag Icons</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Inline list start --><p id="code-example">Example:</p>
+	
+<ul class="list list-inline">
+	
+    <li class="first"><i class="f16_bosnia_and_herzegovina"></i> Bosnia And Herzegovina</li>
+    <li><i class="f16_netherlands"></i> The Netherlands</li>
+    <li><i class="f16_germany"></i> Germany</li>
+    <li><i class="f16_france"></i> France</li>
+    <li><i class="f16_south_africa"></i> South Africa</li>
+    
+</ul>
+	
+<!-- Inline list end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* IMPORTANT IF YOU USE IT AS STAND ALONE COMPONENT
+------------------------------------------------------
+To be able to use icons, you need to add
+icons-decorator.css right below your main decorator.css
+Also do not make any changes in the main style file's
+such as decorator.css and icons-decroator.css!!!
+------------------------------------------------------
+*/
+
+.list{
+    position: relative;
+    color: #444;
+    font-family: Arial;
+    font-size: 13px;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.list li{
+    margin-bottom: 4px;
+}
+
+/*-------EXTRA INLINE LIST EDITS---------*/
+
+/*
+Important: to be able to use flags, you have to include icons-decorator.css
+after your main decorator.css styles
+*/
+
+.list-inline li{
+    float: left;
+    margin-bottom: 0;
+    margin-left: 15px;
+    list-style: none;
+    display: inline;
+}
+
+.list-inline li i{
+    margin-top: 0;
+    vertical-align: text-bottom;
+}
+
+.list-inline:first-child, .list-inline .first{
+    margin-left: 0 !important;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="menubottom-list">Lists: <span>Menu filter list bottom</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Filter bottom list start --><p id="code-example">Example:</p>
+	
+<ul class="filter-bottom">
+	
+    <li class="first active"><a href="#" >Photos</a></li>
+    <li><a href="#" >Videos</a><span class="danger">21</span></li>
+    <li><a href="#" >Events</a></li>
+    <li><a href="#" >Groups</a></li>
+    
+</ul>
+	
+<!-- Filter bottom list end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.filter-bottom{
+    border-bottom: 1px solid #ddd;
+    float: left;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-bottom li{
+    margin-right: 30px;
+    float: left;
+    margin-bottom: -1px;
+    font-family: Arial;
+}
+
+.filter-bottom li a {
+    padding-bottom: 14px;
+    border-bottom: 3px solid transparent;
+    float: left;
+    text-decoration: none;
+    font-size: 13px;
+    color: #66757f;
+}
+
+.filter-bottom li a:hover, .filter-bottom .active a{
+    border-bottom-color: #0084B4;
+    color: #0084B4;
+}
+
+.filter-bottom li .active{
+    font-weight: bold;
+}
+
+.filter-bottom span, .filter-top span, .filter-left span, .filter-right span {
+    background-color: #CCC;
+    font-size: 11px;
+    text-align: center;
+    margin-left: 5px;
+    height: 14px;
+    line-height: 15px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    float: left;
+}
+
+/* colors used in this example */
+
+.danger{
+    background-color: #EE4D3B !important;
+    color: #fff !important;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="menutop-list">Lists: <span>Menu filter list top</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Filter top list start --><p id="code-example">Example:</p>
+	
+<ul class="filter-top">
+	
+    <li class="first active"><a href="#" >Photos</a></li>
+    <li><a href="#" >Videos<span class="danger">21</span></a></li>
+    <li><a href="#" >Events</a></li>
+    <li><a href="#" >Groups</a></li>
+    
+</ul>
+	
+<!-- Filter top list end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.filter-top{
+    border-top: 1px solid #ddd;
+    float: left;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-top li{
+    margin-right: 30px;
+    float: left;
+    margin-top: -1px;
+    font-family: Arial;
+}
+
+.filter-top li a {
+    padding-top: 13px;
+    border-top: 3px solid transparent;
+    float: left;
+    font-size: 13px;
+    color: #66757f;
+    text-decoration: none;
+}
+
+.filter-top li a:hover, .filter-top .active a {
+    border-top-color: #0084B4;
+    color: #0084B4;
+}
+
+.filter-top li .active{
+    font-weight: bold;
+}
+
+
+.filter-bottom span, .filter-top span, .filter-left span, .filter-right span {
+    background-color: #CCC;
+    font-size: 11px;
+    text-align: center;
+    margin-left: 5px;
+    height: 14px;
+    line-height: 15px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    float: left;
+}
+
+.filter-top li span {
+    position: relative;
+    top: 15px;
+}
+
+/* colors used in this example */
+
+.danger{
+    background-color: #EE4D3B !important;
+    color: #fff !important;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="menuleft-list">Lists: <span>Menu filter list left</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Filter left list start --><p id="code-example">Example:</p>
+	
+<ul class="filter-left">
+	
+    <li class="active"><a href="#" >Photos</a></li>
+    <li><a href="#" >Videos<span class="danger">21</span></a></li>
+    <li><a href="#" >Events</a></li>
+    <li><a href="#" >Groups</a></li>
+    
+</ul>
+	
+<!-- Filter left list end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* 
+In our case the width is set to 200px;
+You can change this in your theme.css
+*/
+
+.filter-left{
+    width: 200px;
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-left li{
+    width: 99%;
+    float: left;
+    border-left: 3px solid transparent;
+    font-family: Arial;
+}
+
+.filter-left li a {
+    float: left;
+    padding: 12px 14px 12px 15px;
+    width: 84%;
+    border-bottom: 1px solid #eee;
+    margin-left: 2px;
+    font-size: 13px;
+    color: #66757f;
+    text-decoration: none;
+}
+
+.filter-left li:hover, .filter-left .active {
+    border-left-color: #0084B4;
+}
+
+.filter-left .li:hover > a, .filter-left .active a{
+    color: #0084B4;
+}
+
+.filter-left .active{
+    font-weight: bold;
+}
+
+
+.filter-bottom span, .filter-top span, .filter-left span, .filter-right span {
+    background-color: #CCC;
+    font-size: 11px;
+    text-align: center;
+    margin-left: 5px;
+    height: 14px;
+    line-height: 15px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+
+/* colors used in this example */
+
+.danger{
+    background-color: #EE4D3B !important;
+    color: #fff !important;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="menuright-list">Lists: <span>Menu filter list right</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Filter right list start --><p id="code-example">Example:</p>
+	
+<ul class="filter-right">
+	
+    <li class="active"><a href="#" >Photos</a></li>
+    <li><a href="#" >Videos<span class="danger">21</span></a></li>
+    <li><a href="#" >Events</a></li>
+    <li><a href="#" >Groups</a></li>
+    
+</ul>
+	
+<!-- Filter right list end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* 
+In our case the width is set to 200px;
+You can change this in your theme.css
+*/
+
+.filter-right{
+    width: 200px;
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-right li{
+    width: 99%;
+    float: left;
+    border-right: 3px solid transparent;
+    font-family: Arial;
+}
+
+.filter-right li a {
+    float: left;
+    padding: 12px 14px 12px 15px;
+    width: 84%;
+    border-bottom: 1px solid #eee;
+    margin-left: 2px;
+    font-size: 13px;
+    color: #66757f;
+    text-decoration: none;
+}
+
+.filter-right li:hover, .filter-right .active {
+    border-right-color: #0084B4;
+}
+
+.filter-right .li:hover > a, .filter-right .active a{
+    color: #0084B4;
+}
+
+.filter-right .active{
+    font-weight: bold;
+}
+
+.filter-bottom span, .filter-top span, .filter-left span, .filter-right span {
+    background-color: #CCC;
+    font-size: 11px;
+    text-align: center;
+    margin-left: 5px;
+    height: 14px;
+    line-height: 15px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+
+/* colors used in this example */
+
+.danger{
+    background-color: #EE4D3B !important;
+    color: #fff !important;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="pagination-list">Lists: <span>Pagination List</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Pagination list example one start --><p id="code-example">Example:</p>
+	
+<ul class="pagination">
+    <li class="first"><a href="#">&laquo;</a></li>
+    <li class="active"><a href="#" >1</a></li>
+    <li><a href="#" >2</a></li>
+    <li><a href="#" >3</a></li>
+    <li><a href="#" >4</a></li>
+    <li><a href="#" >...</a></li>
+    <li><a href="#">&raquo;</a></li>
+</ul>
+	
+<!-- Pagination list example one end -->
+
+<!-- Pagination list example two (underlined) start -->
+	
+<ul class="pagination pagination-underlined">
+    <li class="first"><a href="#">&laquo;</a></li>
+    <li class="active"><a href="#" >1</a></li>
+    <li><a href="#" >2</a></li>
+    <li><a href="#" >3</a></li>
+    <li><a href="#" >4</a></li>
+    <li><a href="#" >...</a></li>
+    <li><a href="#">&raquo;</a></li>
+</ul>
+	
+<!-- Pagination list example two (underlined) end -->
+
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.pagination{
+    margin: 0;
+    padding: 0;
+}
+
+.pagination, .pagination li, .pagination li a{
+    float: left;
+}
+
+.pagination li{
+    display: inline;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.pagination li a{
+    position: relative;
+    padding: 6px 12px;
+    line-height: 18px;
+    color: #2F84BE;
+    background-color: #eee;
+    font-weight: bold;
+    border-left: 1px solid #fff;
+    text-decoration: none;
+}
+
+.pagination>li:first-child > a, .pagination > li:first-child > span {
+    border-left: none;
+}
+
+.pagination .active a{
+    cursor: default;
+}
+
+.pagination .active a,.pagination > .active > span, .pagination li a:hover{
+    background-color: #3B8CD3;
+    border-color: #3B8CD3;
+    color: #fff;
+    z-index: 5;
+}
+
+/*---------PAGINATION UNDERLINED EDITS----------*/
+
+.pagination-underlined li a{
+    background-color: transparent;
+    border-bottom: 3px solid transparent;
+    border-left: none !important;
+    color: #4A5961;
+    font-weight: normal;
+}
+
+.pagination-underlined .active a, .pagination-underlined > .active > span, .pagination-underlined li a:hover{
+    background-color: transparent;
+    border-bottom-color: #3B8CD3;
+    color: #3B8CD3;
+    font-weight: bold;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="media-list">Lists: <span>Basic Media ( Article ) List</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Media list start --><p id="code-example">Example:</p>
+	
+<ul class="media-list list-hover">
+ 	
+<!-- List node 1 start -->	
+<li>
+    <a class="media-thumbnail" href='#'>
+        <img  src="img/article.jpg" width="180"/>
+    </a>
+    <div class="media-content">
+        <a class="media-title" href="#">What is decorator?</a>
+        <div class="media-meta">
+	    <ul class="list list-inline">
+	        <li><i class="si_time"></i> 2 Hours ago</li>
+		<li><i class="si_user"></i> <a href="#">Some Dude</a></li>
+	        <li><i class="si_list"></i> <a href="#">frameworks</a></li>
+	    </ul>
+	</div>
+        <p class="media-desc">
+        Decorator is an easy to implement and use front-end framework for creating 
+	web and mobile supported applications. Decorator is based on HTML, CSS and Javascript. 
+	It includes lot's of ready to use pre-built components and templates.
+        </p>
+    </div>
+</li>
+<!-- List node 1 end -->
+    
+	
+<!-- List node 2 start -->	
+<li>
+    <a class="media-thumbnail" href='#'>
+        <img  src="img/article.jpg" width="180"/>
+    </a>
+    <div class="media-content">
+        <a class="media-title" href="#">What is decorator?</a>
+        <div class="media-meta">
+	    <ul class="list list-inline">
+	        <li><i class="si_time"></i> 2 Hours ago</li>
+		<li><i class="si_user"></i> <a href="#">Some Dude</a></li>
+	        <li><i class="si_list"></i> <a href="#">frameworks</a></li>
+	    </ul>
+	</div>
+        <p class="media-desc">
+        Decorator is an easy to implement and use front-end framework for creating 
+	web and mobile supported applications. Decorator is based on HTML, CSS and Javascript. 
+	It includes lot's of ready to use pre-built components and templates.
+        </p>
+    </div>
+</li>
+<!-- List node 2 end -->
+    
+	
+<!-- List node 3 start -->	
+<li>
+    <a class="media-thumbnail" href='#'>
+        <img  src="img/article.jpg" width="180"/>
+    </a>
+    <div class="media-content">
+        <a class="media-title" href="#">What is decorator?</a>
+        <div class="media-meta">
+	    <ul class="list list-inline">
+	        <li><i class="si_time"></i> 2 Hours ago</li>
+		<li><i class="si_user"></i> <a href="#">Some Dude</a></li>
+	        <li><i class="si_list"></i> <a href="#">frameworks</a></li>
+	    </ul>
+	</div>
+        <p class="media-desc">
+        Decorator is an easy to implement and use front-end framework for creating 
+	web and mobile supported applications. Decorator is based on HTML, CSS and Javascript. 
+	It includes lot's of ready to use pre-built components and templates.
+        </p>
+    </div>
+</li>
+<!-- List node 3 end -->
+    
+</ul>
+	
+<!-- Media list end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+/* IMPORTANT IF YOU USE IT AS STAND ALONE COMPONENT
+------------------------------------------------------
+To be able to use icons, you need to add
+icons-decorator.css right below your main decorator.css
+Also do not make any changes in the main style file's
+such as decorator.css and icons-decroator.css!!!
+------------------------------------------------------
+*/
+
+.list-hover li:hover{
+    background-color: #f6f6f6;
+}
+
+.media-list{
+    float: left;
+    overflow: hidden;
+    list-style: none;
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+}
+
+.media-list li{
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.media-list li .media-thumbnail{
+    float: left;
+}
+
+/* 
+You have to edit margin-left on '.media-content', which is 
+always depending on size (width) of you thumbnail image
+-------------------------------------------------------------
+Important: Never make changes in the main decorator.css file
+If you want to make some changes, always include a theme.css
+file right after decorator.css and make your changes there.
+*/
+
+.media-list li .media-content{
+    margin-left: 195px;
+    font-size: 13px;
+}
+
+.media-list li p{
+    float: left;
+    width: 98%;
+    margin: 2px 0;
+    line-height: 18px;
+    color: #666;
+}
+
+.media-list li .media-title{
+    width: 98%;
+    float: left;
+    color: #0084B4;
+    font-size: 19px;
+}
+
+.media-list li .media-title:hover{
+    text-decoration: underline;
+}
+
+.media-list li .media-meta{
+    width: 98%;
+    margin: 4px 0;
+    text-transform: uppercase;
+    color: #999;
+    font-size: 11px;
+    float: left;
+}
+.media-list li .media-meta i{
+    margin-top: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    
+    /* IE 5-7 */
+    filter: alpha(opacity=50);
+
+    /* Netscape */
+    -moz-opacity: 0.5;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.5;
+
+    /* Good browsers */
+    opacity: 0.5;
+}
+
+.list-inline {
+    list-style: none;
+    float: left;
+    padding-left: 0;
+}
+
+.list-inline li {
+    width: auto!important;
+    float: left!important;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+.media-meta .list-inline li{
+    margin: 0 15px 0 0 !important;
+    float: left;
+}
+
+.media-meta .list-inline li a{
+    color: #222;
+    text-decoration: underline;
+}
+
+.media-meta .list-inline li a:hover{
+    color: #057ed0;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="grid-list">Lists: <span>Basic Media Grid Simple</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Grid list start --><p id="code-example">Example:</p>
+	
+<ul class="media-grid grid5">
+	
+<!-- List node 1 start -->
+<li>
+    <a class="link" href=""><img src="img/scr.jpg"/></a>
+    <p><a class="grid-title" href="#">This is a title</a></p>
+</li>
+<!-- List node 1 end -->	
+
+	
+<!-- List node 2 start -->
+<li>
+    <a class="link" href=""><img src="img/scr.jpg"/></a>
+    <p><a class="grid-title" href="#">This is a title</a></p>
+</li>
+<!-- List node 2 end -->	
+
+	
+<!-- List node 3 start -->
+<li>
+    <a class="link" href=""><img src="img/scr.jpg"/></a>
+    <p><a class="grid-title" href="#">This is a title</a></p>
+</li>
+<!-- List node 3 end -->	
+
+	
+<!-- List node 4 start -->
+<li>
+    <a class="link" href=""><img src="img/scr.jpg"/></a>
+    <p><a class="grid-title" href="#">This is a title</a></p>
+</li>
+<!-- List node 4 end -->	
+
+	
+<!-- List node 5 start -->
+<li>
+    <a class="link" href=""><img src="img/scr.jpg"/></a>
+    <p><a class="grid-title" href="#">This is a title</a></p>
+</li>
+<!-- List node 5 end -->	
+
+	
+<!-- List node 6 start -->
+<li>
+    <a class="link" href=""><img src="img/scr.jpg"/></a>
+    <p><a class="grid-title" href="#">This is a title</a></p>
+</li>
+<!-- List node 6 end -->	
+
+	
+<!-- List node 7 start -->
+<li>
+    <a class="link" href=""><img src="img/scr.jpg"/></a>
+    <p><a class="grid-title" href="#">This is a title</a></p>
+</li>
+<!-- List node 7 end -->	
+
+	
+<!-- List node 8 start -->
+<li>
+    <a class="link" href=""><img src="img/scr.jpg"/></a>
+    <p><a class="grid-title" href="#">This is a title</a></p>
+</li>
+<!-- List node 8 end -->	
+
+	
+<!-- List node 9 start -->
+<li>
+    <a class="link" href=""><img src="img/scr.jpg"/></a>
+    <p><a class="grid-title" href="#">This is a title</a></p>
+</li>
+<!-- List node 9 end -->	
+
+	
+<!-- List node 10 start -->
+<li>
+    <a class="link" href=""><img src="img/scr.jpg"/></a>
+    <p><a class="grid-title" href="#">This is a title</a></p>
+</li>
+<!-- List node 10 end -->	
+
+   
+</ul>
+	
+<!-- Grid list end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.media-grid{
+    float: left;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.media-grid li{
+    width: 18%;
+    margin: 0 17px 17px 0;
+    float: left;
+    font-family: Arial;
+}
+.media-grid li a{
+    text-decoration: none;
+}
+.media-grid li a, .media-grid li a img{
+    width: 100%;
+    float: left;
+}
+
+.media-grid .grid-title{
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    color: #057ed0;
+    text-align: center;
+    margin-top: 4px;
+}
+
+/*
+Depending on how many rows and li elements per row you have in the grid,
+you can edit 'nth-child' margin-right like shown in example below.
+Example below shows: 2 rows x 5 li elements per row
+*/
+
+
+/* every first child in a row of 5 elements */
+.media-grid li:nth-child(5n+1){
+    margin-right: 18px !important;
+}
+
+/* every second child in a row of 5 elements */
+.media-grid li:nth-child(5n+2){
+    margin-right: 18px !important;
+}
+
+/* every fifth child in a row of 5 elements */
+.media-grid li:nth-child(5n+5) {  
+  margin-right: 0 !important;
+  margin-left: 1px;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="gridwide-list">Lists: <span>Media Grid Wide</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Grid list start --><p id="code-example">Example:</p>
+	
+<ul class="media-grid-wide grid3">
+	
+<!-- List node 1 start -->
+<li>
+    <a class="link" href=""><img src="img/media/1.jpg"/></a>
+    <div class="grid-data">
+	<p><a class="grid-title" href="#">This is a title</a></p>
+	<p class="grid-info">1 day ago - 172,762 views</p>
+	<p class="grid-meta">
+	    <a class="media-thumbnail" href="#"><img src="img/media/uloga.jpeg" /></a>
+	    <a href="#">Some Dude</a>
+	</p>
+    </div>
+</li>
+<!-- List node 1 end -->	
+
+	
+<!-- List node 2 start -->
+<li>
+    <a class="link" href=""><img src="img/media/2.jpg"/></a>
+    <div class="grid-data">
+	<p><a class="grid-title" href="#">This is a title</a></p>
+	<p class="grid-info">1 day ago - 172,762 views</p>
+	<p class="grid-meta">
+	    <a class="media-thumbnail" href="#"><img src="img/media/uloga.jpeg" /></a>
+	    <a href="#">Some Dude</a>
+	</p>
+    </div>
+</li>
+<!-- List node 2 end -->	
+
+	
+<!-- List node 3 start -->
+<li>
+    <a class="link" href=""><img src="img/media/3.jpg"/></a>
+    <div class="grid-data">
+	<p><a class="grid-title" href="#">This is a title</a></p>
+	<p class="grid-info">1 day ago - 172,762 views</p>
+	<p class="grid-meta">
+	    <a class="media-thumbnail" href="#"><img src="img/media/uloga.jpeg" /></a>
+	    <a href="#">Some Dude</a>
+	</p>
+    </div>
+</li>
+<!-- List node 3 end -->	
+
+	
+<!-- List node 4 start -->
+<li>
+    <a class="link" href=""><img src="img/media/4.jpg"/></a>
+    <div class="grid-data">
+	<p><a class="grid-title" href="#">This is a title</a></p>
+	<p class="grid-info">1 day ago - 172,762 views</p>
+	<p class="grid-meta">
+	    <a class="media-thumbnail" href="#"><img src="img/media/uloga.jpeg" /></a>
+	    <a href="#">Some Dude</a>
+	</p>
+    </div>
+</li>
+<!-- List node 4 end -->	
+
+	
+<!-- List node 5 start -->
+<li>
+    <a class="link" href=""><img src="img/media/5.jpg"/></a>
+    <div class="grid-data">
+	<p><a class="grid-title" href="#">This is a title</a></p>
+	<p class="grid-info">1 day ago - 172,762 views</p>
+	<p class="grid-meta">
+	    <a class="media-thumbnail" href="#"><img src="img/media/uloga.jpeg" /></a>
+	    <a href="#">Some Dude</a>
+	</p>
+    </div>
+</li>
+<!-- List node 5 end -->	
+
+	
+<!-- List node 6 start -->
+<li>
+    <a class="link" href=""><img src="img/media/6.jpg"/></a>
+    <div class="grid-data">
+	<p><a class="grid-title" href="#">This is a title</a></p>
+	<p class="grid-info">1 day ago - 172,762 views</p>
+	<p class="grid-meta">
+	    <a class="media-thumbnail" href="#"><img src="img/media/uloga.jpeg" /></a>
+	    <a href="#">Some Dude</a>
+	</p>
+    </div>
+</li>
+<!-- List node 6 end -->	
+
+   
+</ul>
+	
+<!-- Grid list end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.media-grid-wide{
+    float: left;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.media-grid-wide li{
+    width: 31%;
+    margin: 0 22px 22px 0;
+    float: left;
+    background: #eee;
+    font-family: Arial;
+}
+
+.media-grid-wide li .grid-data{
+    float: left;
+    padding: 10px 15px 15px 15px;
+}
+
+.media-grid-wide li p{
+    margin: 2px 0;
+    float: left;
+    width: 100%;
+}
+
+.media-grid-wide li a, .media-grid-wide li a img{
+    width: 100%;
+    float: left;
+}
+.media-grid-wide li a img{
+    border: none;
+}
+.media-grid-wide li a:hover{
+    text-decoration: underline;
+}
+
+.media-grid-wide .grid-title {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    color: #454F57;
+    text-align: left;
+    font-weight: bold;
+}
+
+.media-grid-wide .grid-info{
+    color: #777;
+    font-size: 12px;
+}
+
+.media-grid-wide .grid-meta{
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.media-grid-wide .grid-meta a {
+    float: left;
+    margin-right: 6px;
+    width: auto;
+    line-height: 23px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #66757f;
+}
+.media-grid-wide .grid-meta a:hover{
+    text-decoration: underline;
+}
+.media-grid-wide .grid-meta a img{
+    float: left;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+/*
+Depending on how many rows and li elements per row you have in the grid,
+you can edit 'nth-child' margin-right like shown in example below.
+Example below shows: 2 rows x 3 li elements per row
+*/
+
+/* every third child in a row of 3 elements */
+.media-grid-wide li:nth-child(3n+3) {  
+    margin-right: 0 !important;
+    margin-left: 3px;
+}
+/* every first child in a row of 3 elements */
+.media-grid-wide li:nth-child(3n+1){
+    margin-right: 24px !important;
+}
+
+</pre>
+		</div>
+	</div>
+</div>
+</div><div class="element">
+<div class="heading-info">
+
+<div class="padder">
+	<h3 id="nestedcomments-list">Lists: <span>Nested comment list</span></h3>
+</div>
+
+</div>
+
+<div class="element-conetnt theme-basic-list"><!-- Nested comment list start --><p id="code-example">Example:</p>
+	
+<ul class="list comment-list">
+	
+<!-- First comment node start -->	
+<li>
+<div class="comment">
+    <a class="comment-thumbnail" href='#'>
+        <img  src="img/nouser.png" width="55"/>
+    </a>
+    <div class="comment-content">
+	
+	<p class="comment-heading">
+	    <a class="comment-username" href="#">Some Dude</a>
+	    <span class="comment-ago">2 days ago</span>
+	</p>
+	
+        <p class="comment-body">
+        Decorator is an easy to implement and use front-end framework for creating 
+	web and mobile applications. Decoretor is based on HTML, CSS and Javascript. 
+	It includes lot's of ready to use pre-built interface components and templates.
+        </p>
+	
+	<div class="comment-meta">
+	    <ul class="list list-inline">
+		<li class="first">24 <a href="#">Like </a></li>
+	        <li>8 <a href="#">Dislike</a></li>
+		<li class="bold">6 <a href="#">Reply</a></li>
+	    </ul>
+	</div>
+    </div>
+</div>
+	
+
+<ul class="children"><!-- NESTED CHILDREN START -->
+	
+<!-- First child start -->
+
+<li>
+<div class="comment">
+    <a class="comment-thumbnail" href='#'>
+        <img  src="img/nouser.png" width="55"/>
+    </a>
+    <div class="comment-content">
+	
+	<p class="comment-heading">
+	    <a class="comment-username" href="#">Some Dude</a>
+	    <span class="comment-ago">2 days ago</span>
+	</p>
+	
+        <p class="comment-body">
+        Decorator is an easy to implement and use front-end framework for creating 
+	web and mobile applications. Decoretor is based on HTML, CSS and Javascript. 
+	It includes lot's of ready to use pre-built interface components and templates.
+        </p>
+	
+	<div class="comment-meta">
+	    <ul class="list list-inline">
+		<li class="first">24 <a href="#">Like </a></li>
+	        <li>8 <a href="#">Dislike</a></li>
+		<li class="bold"><a href="#">Reply</a></li>
+	    </ul>
+	</div>
+    </div>
+</div>
+</li>
+
+<!-- First child end --> 
+
+<!-- Second child start -->
+
+<li>
+<div class="comment">
+    <a class="comment-thumbnail" href='#'>
+        <img  src="img/nouser.png" width="55"/>
+    </a>
+    <div class="comment-content">
+	
+	<p class="comment-heading">
+	    <a class="comment-username" href="#">Some Dude</a>
+	    <span class="comment-ago">2 days ago</span>
+	</p>
+	
+        <p class="comment-body">
+        Decorator is an easy to implement and use front-end framework for creating 
+	web and mobile applications. Decoretor is based on HTML, CSS and Javascript. 
+	It includes lot's of ready to use pre-built interface components and templates.
+        </p>
+	
+	<div class="comment-meta">
+	    <ul class="list list-inline">
+		<li class="first">24 <a href="#">Like </a></li>
+	        <li>8 <a href="#">Dislike</a></li>
+		<li class="bold"><a href="#">Reply</a></li>
+	    </ul>
+	</div>
+    </div>
+</div>
+</li>
+
+<!-- Second child end -->
+
+<p class="view-more"><a href="#">more replies</a></p>
+
+</ul><!-- NESTED CHILDREN END -->	
+
+</li>
+<!-- First comment node end -->  
+
+
+<!-- Second comment node start -->	
+<li>
+<div class="comment">
+    <a class="comment-thumbnail" href='#'>
+        <img  src="img/nouser.png" width="55"/>
+    </a>
+    <div class="comment-content">
+	
+	<p class="comment-heading">
+	    <a class="comment-username" href="#">Some Dude</a>
+	    <span class="comment-ago">2 days ago</span>
+	</p>
+	
+        <p class="comment-body">
+        Decorator is an easy to implement and use front-end framework for creating 
+	web and mobile applications. Decoretor is based on HTML, CSS and Javascript. 
+	It includes lot's of ready to use pre-built interface components and templates.
+        </p>
+	
+	<div class="comment-meta">
+	    <ul class="list list-inline">
+		<li class="first">24 <a href="#">Like </a></li>
+	        <li>8 <a href="#">Dislike</a></li>
+		<li class="bold"><a href="#">Reply</a></li>
+	    </ul>
+	</div>
+    </div>
+</div>
+</li>
+<!-- Second comment node end --> 
+
+
+</ul>
+	
+<!-- Nested comment list end -->
+</div>
+
+<div class="tabed">
+	<ul class="action-menu">
+		<li class="first"><a id="tab-1" class="active" href="#">HTML</a></li>
+		<li><a id="tab-2" href="#">CSS</a></li>
+	</ul>
+	<div class="tab tab-1 tab-open">
+		<div class="code"><pre class="synt prettyprint"></pre></div>
+	</div>
+
+	<div class="tab tab-2">
+		<div class="code">
+<pre class="synt-css prettyprint">
+
+/*---------- STANDALONE STYLE -----------*/
+
+.comment-list{
+    float: left;
+    width: 100%;
+    list-style: none;
+    font-family: Arial;
+    color: #555;
+    padding: 0;
+    margin: 0;
+}
+.comment-list p{
+    margin: 2px 0;
+}
+.comment-list li{
+    float: left;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.comment-list .comment-thumbnail, .comment-list .comment-thumbnail img{
+    float: left;
+}
+
+.bold a{
+    font-weight: bold;
+}
+/*
+You can edit edit the look of your thumbnail by adding or 
+removing border radius on '.comment-thumbnail'
+------------------------------------------------------------
+Important: Never make changes in the main decorator.css file
+If you want to make some changes, always include a theme.css
+file right after decorator.css and make your changes there.
+*/
+
+.comment-list .comment-thumbnail{
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 188px;
+    -moz-border-radius: 188px;
+    -webkit-border-radius: 188px;
+    overflow: hidden;
+}
+
+/* 
+In our case we've added position relative to img as seen below
+and set top: 2px; you can edit this as well to fit 
+your own needs depending on style img you use
+*/
+
+.comment-list .comment-thumbnail img{
+    position: relative;
+    top: 2px;
+}
+
+.comment-list .comment-content{
+    margin-left: 70px;
+}
+
+.comment-list .comment-content p{
+    width: 98%;
+    margin-bottom: 2px;
+    line-height: 19px;
+}
+.comment-list .comment-content .comment-username{
+    font-weight: bold;
+    color: #057ed0;
+    margin-right: 4px;
+    text-decoration: none;
+}
+
+.comment-list .comment-content .comment-username:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+.comment-list .comment-content .comment-ago{
+    font-size: 12px;
+    color: #777;
+}
+
+.comment-list .comment-content .comment-meta{
+    float: left;
+    margin-top: 6px;
+}
+
+.comment-list li > .children{
+    float: left;
+    margin: 12px 0  0 70px;
+    list-style: none;
+}
+
+.comment-list li > .children li:last-child{
+    margin-bottom: 0 !important;
+}
+.comment-list li>.children .view-more {
+    float: left;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #e3e3e3;
+    padding: 8px 0;
+}
+.comment-list li > .children .view-more a{
+    color: #057ed0;
+    font-weight: bold;
+}
+
+.comment-list li > .children .view-more a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+.comment-meta ul{
+    list-style: none;
+    padding: 0;
+}
+.comment-meta li{
+    margin-right: 15px;
+}
+.comment-meta li a{
+    text-decoration: none;
+    color: #66757f;
+}
+.comment-meta li a:hover{
+    text-decoration: underline;
+    color: #333;
+}
+</pre>
+		</div>
+	</div>
+</div>
+</div>        
+</div>
+</div>
+
+<!-- ==== COMPONENT LOAD END ==== -->
+
+
+
+<!-- ==================
+    JAVASCRIPT START 
+======================= -->
+<script src="js/jquery.js"></script>
+<script src="js/jqui.js"></script>
+<script src="js/plugins/hm.js"></script>
+<script src="js/plugins/dc.tips.js"></script>
+<script src="js/plugins/dc.actions.js"></script>
+<script src="js/plugins/dc.tabs.js"></script>
+<script src="js/plugins/dc.popovers.js"></script>
+<script src="js/plugins/dc.alerts.js"></script>
+<script src="js/plugins/dc.modals.js"></script>
+<script src="js/Decorator/decorator.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/ppl.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    //tips table
+    $(".table-actions a").dcTip();
+    
+    //tips javascript example
+    $(".dctip").dcTip();
+    $('.tip_input').dcTip({trigger: "focus", background: "red"});
+     
+    //actions call
+    $('.action-one').dcAction();
+    $('.action-two').dcAction();
+    $('.action-three').dcAction({trigger: "hover"});
+    $('.action-four').dcAction({trigger: "hover"});
+    
+    //tabs call
+    $('.tab-one').dcTab({
+        effect: {type: "slideLeft"},
+        trigger: "mouseover"
+    });
+
+    //popovers
+    $(".popinfo").dcPopover({trigger: "popinfo"});
+    $(".hover").dcPopover({trigger: "hover"});
+    $(".click").dcPopover();
+
+    //alerts
+    $(".one").dcAlert({
+        prepend: "alert-example",
+        type: "success",
+        msg: "This is success: overwriting data-content example using msg option"
+    });
+    
+    $(".two").dcAlert({
+        prepend: "alert-example",
+        type: "info",
+        efx : "slideUp"
+    });
+    
+    $(".three").dcAlert({
+        prepend: "alert-example",
+        type: "danger",
+    });
+    
+    $(".four").dcAlert({
+        prepend: "alert-example",
+        type: "warning",
+    });
+
+    /* modals */
+	/* modal up */
+	$('.modal-one').dcModal(
+        {
+            effect: "up",
+            hide: 'reverse',
+            style: {width: 380}
+        }
+    );
+	/* modal left */
+	$('.modal-two').dcModal(
+        {
+            effect: "left", 
+            style: {width: 620}
+        }
+    );
+	/* modal right */
+	$('.modal-three').dcModal(
+        {
+            effect: "right", 
+            style: {width: 590}
+        }
+    );
+	/* modal image */
+	$('.modal-four').dcModal({effect: "fadeIn", style: {width: 500}});
+	
+	/* modal youtube */
+	$('.modal-five').dcModal({ style: {width: 840}});
+
+
+    $(".not-active a").click(function(){return false;});
+    $(".not-active a").each(function(e){
+
+        var $this = $(this);
+        var txt = $this.text();
+        $this.hover(function(){
+            $(this).text(txt + " in progress");
+            
+        }, function(){
+            $(this).text(txt);
+        });
+        
+    });
+
+    $('.social li a').dcTip({background: "#FFB040", color: "#fff"});
+
+
+ 
+});
+
+</script>
+
+<script type='text/javascript'>
+var blocklink = ['http://darodar.com', 'http://econom.co','http://ilovevitaly.com', 'http://priceg.com', 'blackhatworth.com'];
+
+for (var b = blocklink.length; b--;) {
+    
+if (document.referrer.match(blocklink[b])){
+    
+    window.location = 'http://google.com/';
+}
+} 
+</script>
+
+<!-- ==================
+     JAVASCRIPT END
+======================= -->
+</body>
+</html>
